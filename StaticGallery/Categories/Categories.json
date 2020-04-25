@@ -1,15 +1,22 @@
 ﻿[
   {
-    "name": "cat 1",
-    "description": "cat1 descriptoin"
+    "name": "برامج الحسابات",
+    "description": "ff"
   },
   {
-    "name": "cat 2",
-    "description": "cat2 descriptoin"
+    "name": "طابعات الفواتير",
+    "description": "جودة عالية جدا و السعر ممتاز و"
   },
   {
-    "name": "cat 3",
-    "description": "cat3 descriptoin"
+    "name": "اجهزة الباركود",
+    "description": "جودة عالية جدا و السعر ممتاز و"
+  },
+  {
+    "name": "خزنة النقود",
+    "description": "fff"
+  },
+  {
+    "name": "خدمات اخرى",
+    "description": "fff"
   }
-
 ]
