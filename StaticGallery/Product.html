@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title id="titletag"></title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="" type="image/png" id="tablogo" />
+    <meta name="description" content="" >
+    <meta name="author" content="Gipsy - 01097154297 - fb.com/Gipsy.EG">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+
+
+
+
+
+
+
+    <style>
+        body {
+            background-image: url('Images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Cairo';
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .hover:hover {
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+        }
+
+
+        .shadowup {
+            box-shadow: 0px -10px 25px 0px rgba(0, 0, 0, .5);
+        }
+
+        .shadowdown {
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, .2);
+        }
+
+        .text-shadow {
+            text-shadow: 0 0 5px #000000;
+        }
+
+        .Gridcontrol {
+            min-width: 150px;
+        }
+
+        .text-pre {
+            white-space: pre-wrap; /* Since CSS 2.1 */
+            white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+            white-space: -pre-wrap; /* Opera 4-6 */
+            white-space: -o-pre-wrap; /* Opera 7 */
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+
+    <div class="container  text-primary font-weight-bold  mt-3 pt-4" style="opacity: .95;" id="masterpagecontainer">
+
+        <div class="jumbotron border border-primary font-weight-bold text-center py-3 " id="masteragejumbotron">
+            <br />
+            <a href="Index.html" class="d-flex align-items-center justify-content-center text-decoration-none">
+                <img class="img-fluid mx-3" src="" id="logo" style="height: 50px" alt="LOGO" />
+                <h2 class="font-weight-bolder m-0" style="overflow: hidden; white-space: nowrap;">Gipsy</h2>
+            </a>
+
+            <hr />
+
+            <div id="pageRow">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div style="position: relative; border-top: 2px solid #0094ff; opacity: .75;" class="text-dark font-weight-bold bg-light " id="message">
+        <div class="container">
+            <div class="row ">
+
+                <div class="col-md-8 text-right py-5" id="placeinfo">
+                    <h4 class="font-weight-bold" id="placename"></h4>
+                    <hr />
+                </div>
+
+
+                <div class="col-md-4 text-right py-5">
+                    <h4 class="font-weight-bold">اتصل بنا</h4>
+                    <hr />
+                    <a href="#" id="call" target="_blank" class="text-decoration-none">
+                        <i class="fas fa-phone-square fa-3x"
+                           style="color: darkslategrey;"></i>
+                    </a>
+                    <a href="#" id="whats" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-whatsapp-square fa-3x"
+                           style="color: #25D366;"></i>
+                    </a>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="text-center text-light p-3" style="background-color: #27498C;">
+        <a href="https://fb.com/Gipsy.EG" target="_blank" class="font-weight-bold text-decoration-none text-light">©2020 Copyright Gipsy - All rights reserved</a>
+    </div>
+
+
+    <script type="text/javascript">
+        var Categories = "";
+        var infolist = "";
+
+        var reqCategories = new XMLHttpRequest();
+        reqCategories.open('GET', 'Categories/Categories.json?nocache=' + (new Date()).getTime());
+        reqCategories.onload = function () {
+            Categories = JSON.parse(reqCategories.responseText);
+
+        };
+        reqCategories.send();
+
+        var reqinfo = new XMLHttpRequest();
+        reqinfo.open('GET', 'Info/Info.json?nocache=' + (new Date()).getTime());
+        reqinfo.onload = function () {
+            infolist = JSON.parse(reqinfo.responseText);
+
+            $('#call').attr('href', 'Tel:' + infolist[0].phone);
+            $('#whats').attr('href', 'https://wa.me/2' + infolist[0].phone);
+            $('#logo').attr('src', infolist[0].logo);
+            $('#tablogo').attr('href', infolist[0].logo);
+
+            document.getElementById("placename").innerText = infolist[0].name;
+            document.getElementById("titletag").innerText = infolist[0].name;
+
+            document.getElementById("placeinfo").insertAdjacentHTML('beforeend', infolist[0].about);
+
+            $('meta[name=description]').attr('content', infolist[0].about);
+
+        };
+
+        reqinfo.send();
+
+        var reqproducts = new XMLHttpRequest();
+        reqproducts.open('GET', 'Products/Products.json?nocache=' + (new Date()).getTime());
+        reqproducts.onload = function () {
+            var product = JSON.parse(reqproducts.responseText);
+            FillProducts(product);
+            $(".modal").appendTo("body");
+
+
+        };
+        reqproducts.send();
+
+
+
+
+        $(function () {
+        });
+
+
+        function FillProducts(products) {
+            var div = document.getElementById('pageRow');
+            var prolist = products;
+
+            //for (var i = 0; i < prolist.length; i++) {
+            var i = getParameterByName('i'); // "lorem"
+
+            div.insertAdjacentHTML('beforeend', "<div class='card text-right'><div class='row no-gutters'><div class='col-md-5 p-3'><a data-toggle='modal' href='#' data-target='#exampleModal'><img class='card-img img-fluid shadow h-100 w-100 border' src='" + products[i].image + "' alt='' style='object-fit: cover;' /></a></div><div class='col-md-7'><div class='card-body'><h4 class='card-title font-weight-bold' dir='rtl'>" + products[i].name + "</h4><p class='card-text text-pre' dir='rtl'>" + products[i].description + "</p><p class='card-text' dir='rtl'><small class='text-muted h6 font-weight-bold'>السعر : " + products[i].price + "</small></p><a href='https://wa.me/2" + infolist[0].phone + "?text=" + products[i].name + "' class='btn btn-primary  font-weight-bold w-100' target='_blank'>اطلب الأن</a><hr /><p class='card-text' dir='rtl'><a class='btn btn-sm btn-outline-primary font-weight-bold ' href=''>قسم " + Categories[products[i].category].name + "</a></p><p class='card-text text-pre' dir='rtl'>" + Categories[products[i].category].description + "</p><hr /><p class='card-text'>شارك الأن</p><div class='addthis_inline_share_toolbox_d5na mb-3'></div></div></div></div></div><div class='modal pt-0 fade' id='exampleModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'><div class='modal-dialog modal-dialog-centered  modal-lg' role='document'><div class='modal-content'><div class='modal-header'><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div><div class='modal-body p-0'><img class='img-fluid h-100 w-100' src='" + products[i].image + "' alt='' /></div></div></div></div>'");
+            //div.insertAdjacentHTML('beforeend', "<div class='col-md-4 pageelement py-2'><div class='card hover border-primary'><img class='img-fluid card-img-top categoryslider-img' src='" + products[i].image + "' alt='' style='height: 300px; object-fit: cover;' /><a class='card-header btn btn-outline-primary  font-weight-bold rounded-0  border-left-0 border-right-0' href='Product.html?i=" + i + "'><div style='overflow: hidden; white-space: nowrap; direction: rtl'>" + products[i].name + "</div></a><div class='card-body w-100 text-primary categoryslider-body' style='position: absolute; top: 0px; background-color: black; display: none; opacity: .8; overflow-y: scroll; max-height: 100%;'><h5 dir='rtl' class='card-title font-weight-bold'>" + products[i].name + "</h5><p class='card-text '>السعر : " + products[i].price + "</p><p class='card-text text-right text-pre' dir='rtl'>" + products[i].description + "</p></div><a href='https://wa.me/2" + infolist[0].phone + "?text=" + products[i].name + "' class='btn btn-outline-primary card-footer font-weight-bold border-0 w-100' target='_blank'>اطلب الأن</a></div></div>")
+
+            //}
+
+        }
+
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        //$('.paginationspages').paginate({
+        //    scope: $('.pageelement'),
+
+        //    // how many items per page
+        //    perPage: 12,
+        //});
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet" />
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d62b17de0bd801e"></script>
+
+</body>
+</html>
