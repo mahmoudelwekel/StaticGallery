@@ -68,9 +68,11 @@
             </a>
 
             <hr />
-            <div class="addthis_inline_share_toolbox_d5na mb-3"></div>
+            <!--<div class="addthis_inline_share_toolbox_d5na mb-3"></div>-->
 
-            <div class="row pb-3">
+            <div class="sharethis-inline-share-buttons"></div>
+
+            <div class="row py-3">
                 <div class="col " dir="rtl" id="catBtns">
 
                     <a href="Index.html" class="btn btn-sm font-weight-bolder btn-outline-primary m-1" role="button" aria-pressed="true">عرض الكل</a>
@@ -132,35 +134,10 @@
     <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet" />
 
 
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v6.0'
-          });
-        };
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5ea612337ddbf2001271a23a&product=inline-share-buttons&cms=sop' async='async'></script>
 
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-         attribution=setup_tool
-         page_id="102399994644524"
-         theme_color="#007bff"
-         logged_in_greeting="أهلا و سهلا! قولنا شغال فى ايه و احنا هنوفرلك البرنامج المناسب لشغلك"
-         logged_out_greeting="أهلا و سهلا! قولنا شغال فى ايه و احنا هنوفرلك البرنامج المناسب لشغلك">
-    </div>
-
-
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d62b17de0bd801e"   ></script>
+    <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d62b17de0bd801e"   ></script>-->
 
 </body>
 </html>
