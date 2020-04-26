@@ -14,12 +14,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
 
-
-
-
-
-
-
     <style>
         body {
             background-image: url('Images/bg.jpg');
@@ -64,10 +58,6 @@
 <body>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-
-
     <div class="container  text-primary font-weight-bold  mt-3 pt-4" style="opacity: .95;" id="masterpagecontainer">
 
         <div class="jumbotron border border-primary font-weight-bold text-center py-3 " id="masteragejumbotron">
@@ -78,66 +68,18 @@
             </a>
 
             <hr />
-
-            <!--<div class="input-group d-md-flex mb-3">
-
-                <input id="SearchTxt" dir="rtl" class="form-control text-center" placeholder="أكتب أى كلمة للبحث عنها" AutoCompleteType="Search" TextMode="Search" />
-                <div class="input-group-append">
-                    <Button ID="AddProductToBill" class="form-control btn btn-primary font-weight-bolder">
-                        بحث <i class="fas fa-search fa-1x"></i>
-                    </Button>
-                </div>
-            </div>-->
-
             <div class="addthis_inline_share_toolbox_d5na mb-3"></div>
 
             <div class="row pb-3">
                 <div class="col " dir="rtl" id="catBtns">
 
                     <a href="Index.html" class="btn btn-sm font-weight-bolder btn-outline-primary m-1" role="button" aria-pressed="true">عرض الكل</a>
-
                 </div>
             </div>
-
-
             <div class="row paginationspages" id="pageRow">
 
-
-                <!--<div class="col-md-4 pageelement py-2">
-                    <div class="card hover border-primary">
-                        <img class="img-fluid card-img-top categoryslider-img" src="#" alt="" style="height: 300px; object-fit: cover;" />
-                        <a class="card-header btn btn-outline-primary  font-weight-bold rounded-0  border-left-0 border-right-0" href="#">
-                            <div style="overflow: hidden; white-space: nowrap; direction: rtl">
-                                product_name
-                            </div>
-                        </a>
-                        <div class="card-body w-100 text-primary categoryslider-body" style="position: absolute; top: 0px; background-color: black; display: none; opacity: .8; overflow-y: scroll; max-height: 100%;">
-                            <h5 dir="rtl" class="card-title font-weight-bold">product_name</h5>
-                            <p class="card-text ">
-
-                                السعر : 250
-                            </p>
-                            <p class="card-text text-right text-pre" dir="rtl">fdswhfjb ihgfduwhef ihuquiefdhwiue iuhwiuhf</p>
-
-                        </div>
-                        <a href="https://wa.me/201097154297?text=product_name" class="btn btn-outline-primary card-footer font-weight-bold border-0 w-100" target="_blank">اطلب الأن</a>
-                    </div>
-                </div>-->
-
-
             </div>
-
-
-
-
-            <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d62b17de0bd801e"></script>-->
-
-
-
-
-
         </div>
-
     </div>
 
 
@@ -176,135 +118,18 @@
         <a href="https://fb.com/Gipsy.EG" target="_blank" class="font-weight-bold text-decoration-none text-light">©2020 Copyright Gipsy - All rights reserved</a>
     </div>
 
-
-    <!--<div class="position-fixed w-100 h-100 bg-dark " style="bottom: 0px; opacity: .9; z-index: 99999999999999999999999999999999;">
-        <div class="d-flex justify-content-center align-items-center w-100 h-100">
-
-            <div class="fa-10x">
-                <i class="fas fa-circle-notch fa-spin"></i>
-            </div>
-        </div>
-    </div>-->
     <!--<script src="scripts/jquery.paginate.js"></script>-->
 
-
-    <script type="text/javascript">
-
-
-        var reqCategories = new XMLHttpRequest();
-        reqCategories.open('GET', 'Categories/Categories.json?nocache=' + (new Date()).getTime());
-        reqCategories.onload = function () {
-            var Categories = JSON.parse(reqCategories.responseText);
-            for (var i = 0; i < Categories.length; i++) {
-
-                document.getElementById("catBtns").insertAdjacentHTML('beforeend', "<a href='index.html?cat=" + i + "' class='btn btn-sm font-weight-bolder btn-outline-primary m-1' role='button' aria-pressed='true'>" + Categories[i].name + "</a>")
-
-            }
-        };
-        reqCategories.send();
-
-
-        var reqproducts = new XMLHttpRequest();
-        reqproducts.open('GET', 'Products/Products.json?nocache=' + (new Date()).getTime());
-        reqproducts.onload = function () {
-            var product = JSON.parse(reqproducts.responseText);
-            FillProducts(product);
-
-
-        };
-        reqproducts.send();
-
-
-
-
-
-        function FillProducts(products) {
-            var div = document.getElementById('pageRow');
-            var prolist = products;
-
-            var reqinfo = new XMLHttpRequest();
-            reqinfo.open('GET', 'Info/Info.json?nocache=' + (new Date()).getTime());
-            reqinfo.onload = function () {
-                var infolist = JSON.parse(reqinfo.responseText);
-
-                $('#call').attr('href', 'Tel:' + infolist[0].phone);
-                $('#whats').attr('href', 'https://wa.me/2' + infolist[0].phone);
-                $('#logo').attr('src', infolist[0].logo);
-                $('#tablogo').attr('href', infolist[0].logo);
-
-                document.getElementById("placename").innerText = infolist[0].name;
-                document.getElementById("titletag").innerText = infolist[0].name + ' - Home';
-                document.getElementById("placeinfo").insertAdjacentHTML('beforeend', infolist[0].about);
-
-                $('meta[name=description]').attr('content', infolist[0].about);
-
-                var cat = getParameterByName('cat'); // "lorem"
-                if (cat != '' && cat != null) {
-                    var results = [];
-                    var searchField = "category";
-                    var searchVal = cat;
-
-                    for (var i = 0 ; i < prolist.length ; i++) {
-                        if (prolist[i][searchField] == searchVal) {
-                            div.insertAdjacentHTML('beforeend', "<div class='col-md-4 pageelement py-2'><div class='card hover border-primary'><img class='img-fluid card-img-top categoryslider-img ' src='" + products[i].image + "' alt='' style='height: 300px; object-fit: cover;' /><a class='card-header btn btn-outline-primary  font-weight-bold rounded-0  border-left-0 border-right-0' href='Product.html?i=" + i + "'><div style='overflow: hidden; white-space: nowrap; direction: rtl'>" + products[i].name + "</div></a><div class='card-body w-100 text-primary categoryslider-body' style='position: absolute; top: 0px; background-color: black; display: none; opacity: .95; overflow-y: scroll; max-height: 100%;'><h5 dir='rtl' class='card-title font-weight-bold text-right'>" + products[i].name + "</h5><p class='card-text text-right text-pre' dir='rtl'>" + products[i].description + "</p><p class='card-text text-right' dir='rtl'>السعر : " + products[i].price + "</p></div><a href='https://wa.me/2" + infolist[0].phone + "?text=" + products[i].name + "' class='btn btn-outline-primary card-footer font-weight-bold border-0 w-100' target='_blank'>اطلب الأن</a></div></div>")
-                        }
-                    }
-
-                } else {
-                    for (var i = 0; i < prolist.length; i++) {
-
-                        div.insertAdjacentHTML('beforeend', "<div class='col-md-4 pageelement py-2'><div class='card hover border-primary'><img class='img-fluid card-img-top categoryslider-img ' src='" + products[i].image + "' alt='' style='height: 300px; object-fit: cover;' /><a class='card-header btn btn-outline-primary  font-weight-bold rounded-0  border-left-0 border-right-0' href='Product.html?i=" + i + "'><div style='overflow: hidden; white-space: nowrap; direction: rtl'>" + products[i].name + "</div></a><div class='card-body w-100 text-primary categoryslider-body' style='position: absolute; top: 0px; background-color: black; display: none; opacity: .95; overflow-y: scroll; max-height: 100%;'><h5 dir='rtl' class='card-title font-weight-bold text-right'>" + products[i].name + "</h5><p class='card-text text-right text-pre' dir='rtl'>" + products[i].description + "</p><p class='card-text text-right' dir='rtl'>السعر : " + products[i].price + "</p></div><a href='https://wa.me/2" + infolist[0].phone + "?text=" + products[i].name + "' class='btn btn-outline-primary card-footer font-weight-bold border-0 w-100' target='_blank'>اطلب الأن</a></div></div>")
-
-                    }
-                }
-                $(".card").hover(function (event) {
-                    $(".categoryslider-body", this).css("height", $(".categoryslider-img", this).height());
-                    $(".categoryslider-body", this).fadeIn();
-                });
-
-                $(".card").mouseleave(function (event) {
-                    $(".categoryslider-body", this).fadeOut();
-                });
-            };
-            reqinfo.send();
-
-        }
-        function getParameterByName(name, url) {
-            if (!url) url = window.location.href;
-            name = name.replace(/[\[\]]/g, '\\$&');
-            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-                results = regex.exec(url);
-            if (!results) return null;
-            if (!results[2]) return '';
-
-            return decodeURIComponent(results[2].replace(/\+/g, ' '));
-
-        }
-
-
-        //$('.paginationspages').paginate({
-        //    scope: $('.pageelement'),
-
-        //    // how many items per page
-        //    perPage: 12,
-        //});
-    </script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+    <script src="index.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet" />
 
-
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d62b17de0bd801e"   ></script>
-
-        <!--<ul dir='rtl' class='text-right'> 
-
-        </ul>-->
-
-
 
 </body>
 </html>
