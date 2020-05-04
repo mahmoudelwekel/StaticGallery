@@ -13,7 +13,7 @@ reqCategories.open('GET', 'Categories/Categories.json?nocache=' + (new Date()).g
 
     if (cat != '' && cat != null) {
         var cate_descrip = document.getElementById('cate_descrip');
-        cate_descrip.insertAdjacentHTML('beforeend', "<div class='alert mt-3 pt-4 alert-primary shadow-sm border border-primary text-right' dir='rtl'><h5 class=' font-weight-bold'> تفاصيل عن القسم :</h5>  " + Categories[cat].description + "</div>");
+        cate_descrip.insertAdjacentHTML('beforeend', "<div class='alert mt-3 pt-4 alert-primary shadow-sm border border-primary text-right' dir='rtl'><a class='h5 font-weight-bold d-block' href='index.html?cat=" + cat + "'>المزيد عن قسم " + Categories[cat].name + "</a>  " + Categories[cat].description + "</div>");
 
 
         //$('#catBtns').append($("a[href='Index.html?cat=" + cat + "']"))
