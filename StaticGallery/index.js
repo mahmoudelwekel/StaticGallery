@@ -8,7 +8,7 @@ reqCategories.open('GET', 'Categories/Categories.json?nocache=' + (new Date()).g
     var Categories = JSON.parse(reqCategories.responseText);
     for (var i = 0; i < Categories.length; i++)
     {
-        catnav.insertAdjacentHTML('beforeend', "<a href='Index.html?cat=" + i + "' class='nav-item nav-link  font-weight-bold'>" + Categories[i].name + "</a>  <a class='border'></a>")
+        catnav.insertAdjacentHTML('beforeend', "  <a class='border'></a><a href='Index.html?cat=" + i + "' class='nav-item nav-link  font-weight-bold'>" + Categories[i].name + "</a>")
     }
 
     if (cat != '' && cat != null) {
