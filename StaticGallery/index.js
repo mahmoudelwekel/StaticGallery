@@ -1,4 +1,5 @@
-﻿var cat = getParameterByName('cat');
+﻿$(document).ready(function () {
+var cat = getParameterByName('cat');
 
 
 var reqCategories = new XMLHttpRequest();
@@ -32,6 +33,11 @@ reqproducts.onload = function ()
     FillProducts(product);
 };
 reqproducts.send();
+
+
+
+
+
 function FillProducts(products) {
     var div = document.getElementById('pageRow');
     var prolist = products;
@@ -85,6 +91,7 @@ function FillProducts(products) {
     reqinfo.send();
 }
 
+});
 function getParameterByName(name, url)
 {
     if (!url) url = window.location.href;
@@ -94,3 +101,8 @@ function getParameterByName(name, url)
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+
+
+
+

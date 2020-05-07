@@ -1,4 +1,6 @@
-﻿var reqinfo = new XMLHttpRequest();
+﻿
+$(document).ready(function () {
+var reqinfo = new XMLHttpRequest();
 reqinfo.open('GET', 'Info/Info.json?nocache=' + (new Date()).getTime());
 reqinfo.onload = function () {
     var infolist = JSON.parse(reqinfo.responseText);
@@ -47,6 +49,7 @@ function FillProducts(products, infolist, Categories) {
 
 }
 
+});
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, '\\$&');
@@ -55,3 +58,5 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+
