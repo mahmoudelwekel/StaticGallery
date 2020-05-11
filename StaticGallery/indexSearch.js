@@ -2,11 +2,11 @@
 var prolist, infolist, value;
 
 $(document).ready(function () {
-    $.getJSON('Products/Products.json?nocache=' + (new Date()).getTime(), function (json) {
+    $.getJSON('Products/Products.json?nocache=' + (new Date()).getMinutes(), function (json) {
         prolist = json;
     });
 
-    $.getJSON('Info/Info.json?nocache=' + (new Date()).getTime(), function (json) {
+    $.getJSON('Info/Info.json?nocache=' + (new Date()).getMinutes(), function (json) {
         infolist = json;
     });
 

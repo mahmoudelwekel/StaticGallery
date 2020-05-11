@@ -1,7 +1,7 @@
 ﻿
 $(document).ready(function () {
 var reqinfo = new XMLHttpRequest();
-reqinfo.open('GET', 'Info/Info.json?nocache=' + (new Date()).getTime());
+reqinfo.open('GET', 'Info/Info.json?nocache=' + (new Date()).getMinutes());
 reqinfo.onload = function () {
     var infolist = JSON.parse(reqinfo.responseText);
     $('#call').attr('href', 'Tel:' + infolist[0].phone);
@@ -13,13 +13,13 @@ reqinfo.onload = function () {
 
 
     var reqCategories = new XMLHttpRequest();
-    reqCategories.open('GET', 'Categories/Categories.json?nocache=' + (new Date()).getTime());
+    reqCategories.open('GET', 'Categories/Categories.json?nocache=' + (new Date()).getMinutes());
     reqCategories.onload = function () {
         var Categories = JSON.parse(reqCategories.responseText);
 
 
         var reqproducts = new XMLHttpRequest();
-        reqproducts.open('GET', 'Products/Products.json?nocache=' + (new Date()).getTime());
+        reqproducts.open('GET', 'Products/Products.json?nocache=' + (new Date()).getMinutes());
         reqproducts.onload = function () {
             var product = JSON.parse(reqproducts.responseText);
             FillProducts(product, infolist, Categories);

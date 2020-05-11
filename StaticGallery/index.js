@@ -3,7 +3,7 @@ var cat = getParameterByName('cat');
 
 
 var reqCategories = new XMLHttpRequest();
-reqCategories.open('GET', 'Categories/Categories.json?nocache=' + (new Date()).getTime()); reqCategories.onload = function ()
+reqCategories.open('GET', 'Categories/Categories.json?nocache=' + (new Date()).getMinutes()); reqCategories.onload = function ()
 {
     var catnav=document.getElementById("catBtns");
     var Categories = JSON.parse(reqCategories.responseText);
@@ -26,7 +26,7 @@ reqCategories.open('GET', 'Categories/Categories.json?nocache=' + (new Date()).g
 reqCategories.send();
 var reqproducts = new XMLHttpRequest();
 
-reqproducts.open('GET', 'Products/Products.json?nocache=' + (new Date()).getTime());
+reqproducts.open('GET', 'Products/Products.json?nocache=' + (new Date()).getMinutes());
 reqproducts.onload = function ()
 {
     var product = JSON.parse(reqproducts.responseText);
@@ -42,7 +42,7 @@ function FillProducts(products) {
     var div = document.getElementById('pageRow');
     var prolist = products;
     var reqinfo = new XMLHttpRequest();
-    reqinfo.open('GET', 'Info/Info.json?nocache=' + (new Date()).getTime());
+    reqinfo.open('GET', 'Info/Info.json?nocache=' + (new Date()).getMinutes());
     reqinfo.onload = function ()
     {
         var infolist = JSON.parse(reqinfo.responseText);
