@@ -14,6 +14,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    <link href="assets/jquery.paginate.css" rel="stylesheet" />
     <style>
         body {
             background-image: url('Images/bg.jpg');
@@ -57,62 +60,75 @@
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg rounded shadow-sm  navbar-light bg-light">
+        <div class="container">
+
+
+            <a href="Index.html" class="navbar-brand font-weight-bolder">
+                <img class="img-fluid mr-2" src="" id="logo" style="height: 40px"  />
+                <span id="brandName"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" dir="rtl" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto" dir="rtl" id="catBtns">
+                    <a class="border mt-2  d-lg-none"></a>
+                    <a href='Index.html' class='nav-item nav-link active font-weight-bold'>
+                        <i class="fas fa-lg fa-home"></i>
+                    </a>
+                </div>
+                <!--<div class="form-inline my-2 my-lg-0" dir="ltr">
+
+                </div>-->
+            </div>
+        </div>
+    </nav>
 
     <div class="container  text-primary font-weight-bold  mt-3 pt-4" style="opacity: .95;" id="masterpagecontainer">
 
-        <div class="jumbotron shadow border border-primary font-weight-bold text-center py-3 " id="masteragejumbotron">
-            <br />
-            <a href="Index.html" class="d-flex align-items-center justify-content-center text-decoration-none">
-                <img class="img-fluid mx-3" src="" id="logo" style="height: 50px" alt="LOGO" />
-                <h2 class="font-weight-bolder m-0" style="overflow: hidden; white-space: nowrap;">Gipsy</h2>
-            </a>
+        <div class="jumbotron shadow border border-primary font-weight-bold text-center py-4 " id="masteragejumbotron">
 
-            <hr />
-            <!--<div class="addthis_inline_share_toolbox_d5na mb-3"></div>-->
-            <nav class="navbar navbar-expand-lg rounded shadow-sm  navbar-light bg-light">
-                <div class="navbar-brand col p-0" style="min-width:120px;">
-                    <div class="input-group w-100">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </div>
-                        <input type="search" id="Text1" class="form-control text-center" placeholder="البحث" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
+            <div class="input-group input-group-lg">
+                <input type="search" id="Text1" class="form-control text-center" placeholder="البحث فى الموقع" aria-label="Username" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fas fa-search"></i>
+                    </span>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" dir="rtl" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto" dir="rtl" id="catBtns">
-                        <a class="border mt-2  d-lg-none"></a>
-                        <a href='Index.html' class='nav-item nav-link active font-weight-bold'>
-                            <i class="fas fa-lg fa-home"></i>
-                        </a>
-                    </div>
-                    <!--<div class="form-inline my-2 my-lg-0" dir="ltr">
-                        
-                    </div>-->
-                </div>
-            </nav>
-            <div class="sharethis-inline-share-buttons mt-3 mb-2"></div>
+            </div>
 
-            <!--<div class="row py-2">
-                <div class="col " dir="rtl">
+            <marquee direction="right" class="mb-0 mt-3 text-danger" id="adsMarquee" onmouseover="this.stop()" onmouseout="this.start()" scrolldelay="100" scrollamount="15">
+            </marquee>
 
-                    <a class="btn btn-sm font-weight-bolder btn-outline-primary m-1" role="button" aria-pressed="true">عرض الكل</a>
-                </div>
-            </div>-->
+
             <div class="row paginationspages" id="pageRow">
 
             </div>
+
             <div class="row ">
                 <div class="col " id="cate_descrip">
 
                 </div>
             </div>
+
         </div>
+
+
+        <div class="jumbotron shadow border border-primary font-weight-bold text-center py-4 ">
+            <h3 class="font-weight-bolder">شركاء النجاح</h3>
+            <hr />
+            <div class="owl-carousel owl-theme text-dark card-group " id="PartnersDiv">
+
+            </div>
+        </div>
+
+        <!--<div class="addthis_inline_share_toolbox_d5na mb-3"></div>-->
+        <!--<div class="sharethis-inline-share-buttons mt-3 mb-2"></div>-->
+
     </div>
+
+
 
 
     <div style="position: relative; border-top: 2px solid #0094ff; opacity: .75;" class="text-dark font-weight-bold bg-light " id="message">
@@ -136,6 +152,18 @@
                         <i class="fab fa-whatsapp-square fa-3x"
                            style="color: #25D366;"></i>
                     </a>
+                    <a href="#" id="face" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-facebook-square fa-3x"
+                           style="color: #3b5998;"></i>
+                    </a>
+                    <a href="#" id="messenger" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-facebook-messenger fa-3x"
+                           style="color: #00C6FF;"></i>
+                    </a>
+                    <a href="#" id="insta" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-instagram-square fa-3x"
+                           style="color: #3f729b ;"></i>
+                    </a>
 
                 </div>
 
@@ -149,28 +177,30 @@
 
 
     <div class="text-center text-light p-3" style="background-color: #27498C;">
-        <a href="https://fb.com/Gipsy.EG" target="_blank" class="font-weight-bold text-decoration-none text-light">©2020 Copyright Gipsy - All rights reserved</a>
+        <a href="https://fb.com/Gipsy.EG" target="_blank" class="font-weight-bold text-decoration-none text-light">Powered by Gipsy</a>
     </div>
 
-    <!--<script src="scripts/jquery.paginate.js"></script>-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-    <script src="index.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 
-
-    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5ea76d017ddbf2001271a27c&product=inline-share-buttons&cms=sop' async='async'></script>
-
+    <!--<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5ea76d017ddbf2001271a27c&product=inline-share-buttons&cms=sop' async='async'></script>-->
     <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d62b17de0bd801e"   ></script>-->
 
+    <script src="assets/jquery.paginate.js"></script>
 
-    <script src="indexSearch.js"></script>
+    <script src="Info/FillInfo.js?version=1"></script>
+    <script src="Categories/FillCategories.js?version=1"></script>
+    <script src="Products/IndexFill.js?version=1"></script>
+    <script src="Partners/FillPartners.js?version=1"></script>
+    <script src="Products/indexSearch.js?version=1"></script>
+
 
 </body>
 </html>
