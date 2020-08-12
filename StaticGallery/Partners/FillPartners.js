@@ -13,7 +13,7 @@
     }
     $('#PartnersDiv').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 0,
         responsiveClass: true,
         autoplay: true,
         autoplayHoverPause: true,
