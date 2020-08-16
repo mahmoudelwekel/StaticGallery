@@ -9,8 +9,6 @@ $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
     var infolist = json;
 
     $.getJSON('Products/Products.json?nocache=' +nocach, function (prolist) {
-        var prolist = prolist;
-        
 
         if (cat != '' && cat != null)
         {
