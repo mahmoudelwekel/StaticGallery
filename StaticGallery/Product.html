@@ -91,7 +91,7 @@
 
             <h4 class="font-weight-bold" dir="rtl" id="productName"></h4>
             <hr style="width:70%;margin-left:15%" />
-            
+
 
 
             <div class="row paginationspages" id="pageRow">
@@ -101,7 +101,7 @@
                 <div class="col-md-6 py-1">
                     <div id="carouselExampleInterval" class="carousel slide border border-primary rounded bg-white " style="height:255px;" data-ride="carousel">
                         <div class="carousel-inner rounded" id="productSlider">
-                            
+
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
@@ -151,7 +151,7 @@
                             <div class="card-header" id="headingThree">
                                 <h2 class="mb-0">
                                     <button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        
+
                                         <i class="fas fa-user-shield fa-lg"></i>
                                         الشروط و الأحكام
                                     </button>
@@ -188,8 +188,8 @@
                 <div class="col-md-12">
                     <br />
 
-                <marquee direction="right" class=" text-danger" id="adsMarquee" onmouseover="this.stop()" onmouseout="this.start()" scrolldelay="0" scrollamount="8">
-                </marquee>
+                    <marquee direction="right" class=" text-danger" id="adsMarquee" onmouseover="this.stop()" onmouseout="this.start()" scrolldelay="0" scrollamount="8">
+                    </marquee>
                 </div>
 
 
@@ -290,20 +290,20 @@
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v8.0'
-          });
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
         };
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat"
@@ -313,5 +313,10 @@
          logged_in_greeting="أهلا و سهلا! قولنا شغال فى ايه و احنا هنوفرلك البرنامج المناسب لشغلك"
          logged_out_greeting="أهلا و سهلا! قولنا شغال فى ايه و احنا هنوفرلك البرنامج المناسب لشغلك">
     </div>
+
+
+
+
+
 </body>
 </html>

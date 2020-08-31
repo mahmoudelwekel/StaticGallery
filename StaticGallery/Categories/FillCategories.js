@@ -9,7 +9,7 @@ $.getJSON('Categories/Categories.json?nocache=' + nocach, function (json) {
     var Categories = json;
 
     for (var i = 0; i < Categories.length; i++) {
-        catnav.insertAdjacentHTML('beforeend', "  <a class='border'></a><a href='Index.html?cat=" + i + "' class='nav-item nav-link  font-weight-bold text-right'>" + Categories[i].icon + "&nbsp;&nbsp;" + Categories[i].name + "</a>")
+        catnav.insertAdjacentHTML('beforeend', "  <a class='border mx-2'></a><a href='Index.html?cat=" + i + "' class='nav-item nav-link  font-weight-bold text-right'>" + Categories[i].icon + "&nbsp;&nbsp;" + Categories[i].name + "</a>")
     }
 
     if (cat != '' && cat != null) {
