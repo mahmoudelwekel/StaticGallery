@@ -16,11 +16,15 @@ $.getJSON('Categories/Categories.json?nocache=' + nocach, function (json) {
         var cate_descrip = document.getElementById('cate_descrip');
         cate_descrip.insertAdjacentHTML('beforeend', "<div class='alert mt-3 pt-4 alert-primary shadow-sm border border-primary text-right' dir='rtl'><a class='h5 font-weight-bold d-block' href='index.html?cat=" + cat + "'>المزيد عن قسم " + Categories[cat].name + "</a>  " + Categories[cat].description + "</div>");
 
+        document.getElementById("titletag").innerText = document.getElementById("brandName").innerText + ' - ' + Categories[cat].name;
+
 
         //$('#catBtns').append($("a[href='Index.html?cat=" + cat + "']"))
 
         $("a[href='Index.html']").removeClass('active');
         $("a[href='Index.html?cat=" + cat + "']").addClass('active');
+
+
     }
 });
 

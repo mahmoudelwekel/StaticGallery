@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <link href="assets/jquery.paginate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
     <style>
         body {
             background-image: url('Images/bg.jpg');
@@ -65,7 +67,7 @@
 
 
             <a href="Index.html" class="navbar-brand font-weight-bolder">
-                <img class="img-fluid mr-2" src="" id="logo" style="height: 40px"  />
+                <img class="img-fluid mr-2 animate__animated animate__swing animate__slower animate__repeat-2	2" src="" id="logo" style="height: 40px" />
                 <span class="font-weight-bolder" id="brandName"></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +90,6 @@
     <div class="container  text-primary font-weight-bold  mt-3 pt-4" style="opacity: .99;" id="masterpagecontainer">
 
         <div class="jumbotron shadow border border-primary font-weight-bold text-center py-4 " id="masteragejumbotron">
-
             <div class="input-group input-group-lg">
                 <input type="search" id="Text1" class="form-control text-center" placeholder="البحث فى الموقع" aria-label="Username" aria-describedby="basic-addon1">
                 <div class="input-group-append">
@@ -118,7 +119,7 @@
         <div class="jumbotron shadow border border-primary font-weight-bold text-center py-5 ">
             <h2 class="font-weight-bolder">شركاء النجاح</h2>
             <br />
-            <hr style="width:70%;margin-left:15%"/>
+            <hr style="width:70%;margin-left:15%" />
             <div class="owl-carousel owl-theme text-dark" id="PartnersDiv">
 
             </div>
@@ -207,20 +208,20 @@
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v8.0'
-          });
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
         };
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat"

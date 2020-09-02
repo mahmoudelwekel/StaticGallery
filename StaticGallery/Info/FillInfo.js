@@ -16,7 +16,7 @@ $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
 
     document.getElementById("placename").innerText = infolist[0].name;
     document.getElementById("brandName").innerText = infolist[0].name;
-    document.getElementById("titletag").innerText = infolist[0].name + ' - Home';
+    document.getElementById("titletag").innerText = infolist[0].name + ' - الرئيسية';
 
     document.getElementById("adsMarquee").innerText = infolist[0].ads;
 
