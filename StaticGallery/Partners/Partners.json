@@ -2,22 +2,22 @@
   {
     "name": "الفوى",
     "image": "Partners/images/fawy.jpg",
-    "link": "https://www.facebook.com/Gipsy.EG/posts/118217386396118"
+    "link": "https://www.facebook.com/%D8%A7%D9%84%D9%81%D9%88%D9%8A-%D9%84%D9%84%D8%B4%D9%86%D8%B7-105317127984029"
   },
   {
     "name": "Fabrics Shop",
     "image": "Partners/images/fab.jpg",
-    "link": "https://www.facebook.com/Gipsy.EG/posts/139817840902739"
+    "link": "https://www.facebook.com/Fabrics-shop-1503368516604301"
   },
   {
     "name": "المهندس",
     "image": "Partners/images/eng.jpg",
-    "link": "https://www.facebook.com/Gipsy.EG/posts/141431010741422"
+    "link": "https://www.facebook.com/ELMohandsAirconditioning"
   },
   {
-    "name": "سيف الفارس",
-    "image": "Partners/images/seif.jpg",
-    "link": "https://www.facebook.com/Gipsy.EG/posts/120792362805287"
+    "name": "Agamy Store",
+    "image": "Partners/images/agamy.jpg",
+    "link": "https://www.facebook.com/Agamy-stores_%D8%B9%D8%AC%D9%85%D9%8A-%D8%B3%D8%AA%D9%88%D8%B1%D8%B2-110333270458824"
   },
   {
     "name": "Latte Cafe",
@@ -28,6 +28,11 @@
     "name": "Java Store",
     "image": "Partners/images/java.jpg",
     "link": "https://www.facebook.com/JAVA.coffee.store"
+  },
+  {
+    "name": "سيف الفارس",
+    "image": "Partners/images/seif.jpg",
+    "link": "https://www.facebook.com/Gipsy.EG/posts/120792362805287"
   },
   {
     "name": "مايونيز",
