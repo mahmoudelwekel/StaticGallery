@@ -56,6 +56,17 @@
             white-space: -pre-wrap; /* Opera 4-6 */
             white-space: -o-pre-wrap; /* Opera 7 */
         }
+
+        .carousel-caption {
+            right: 0px;
+            left: 0px;
+            opacity: .8;
+        }
+
+        .fullimg {
+            height: 450px;
+            object-fit: cover;
+        }
     </style>
 
 
@@ -86,6 +97,25 @@
             </div>
         </div>
     </nav>
+
+
+    <div id="carouselExampleInterval" class="carousel slide carousel-fade bg-white border-bottom border-primary " style="height:451px;" data-ride="carousel">
+        <div class="carousel-inner shadow" id="HomeSlider">
+
+           
+            
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next " href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+
 
     <div class="container  text-primary font-weight-bold  mt-3 pt-4" style="opacity: .99;" id="masterpagecontainer">
 
@@ -199,7 +229,7 @@
 
     <script src="Info/FillInfo.js?version=2"></script>
     <script src="Categories/FillCategories.js?version=2"></script>
-    <script src="Products/IndexFill.js?version=2"></script>
+    <script src="Products/IndexFill.js?version=3"></script>
     <script src="Partners/FillPartners.js?version=2"></script>
     <script src="Products/indexSearch.js?version=2"></script>
 
@@ -222,7 +252,6 @@
             js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>-->
-
     <!-- Your Chat Plugin code -->
     <!--<div class="fb-customerchat"
          attribution=setup_tool
