@@ -63,19 +63,31 @@
 
 
             <a href="Index.html" class="navbar-brand font-weight-bolder">
-                <img class="img-fluid mr-2" src="" id="logo" style="height: 40px" />
+                <img class="img-fluid mr-2 animate__animated animate__swing animate__slower animate__repeat-2	2" src="" id="logo" style="height: 40px" />
                 <span class="font-weight-bolder" id="brandName"></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" dir="rtl" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto" dir="rtl" id="catBtns">
-                    <a class="border mt-2  d-lg-none"></a>
-                    <a href='Index.html' class='nav-item nav-link active font-weight-bold text-right'>
-                        <i class="fas fa-home"></i>&nbsp;&nbsp;الرئيسية
-                    </a>
-                </div>
+                <ul class="navbar-nav ml-auto p-0" dir="rtl">
+                    <li class='nav-item  '>
+                        <a href='Index.html' class='nav-link active font-weight-bold text-right'><i class="fas fa-home"></i>&nbsp;&nbsp;الرئيسية</a>
+                    </li>
+                    <li class="border"></li>
+                    <li class='nav-item '>
+                        <a href='Index.html#patners' class='nav-link  font-weight-bold text-right'><i class="fas fa-users"></i>&nbsp;&nbsp;شركاء النجاح</a>
+                    </li>
+                    <li class="border"></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold text-right" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-laptop-house"></i>&nbsp;&nbsp;الأقسام&nbsp;&nbsp;
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" id="catBtns" aria-labelledby="navbarDropdown">
+
+                        </div>
+                    </li>
+                </ul>
                 <!--<div class="form-inline my-2 my-lg-0" dir="ltr">
 
                 </div>-->

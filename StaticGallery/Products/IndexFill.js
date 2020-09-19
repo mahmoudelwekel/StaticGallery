@@ -16,10 +16,14 @@ $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
 
         var slider = ["0", "1", "21", "2", "3"];
 
-        HomeSlider.insertAdjacentHTML('beforeend', " <div class='carousel-item active' data-interval='3000'> <img src='" + prolist[slider[0]].image[0] + "' class='d-block w-100 fullimg'> <div class='carousel-caption bg-dark '> <h4>" + prolist[slider[0]].name + "</h4> <hr /> <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[slider[0]].name + "' class='btn btn-success font-weight-bold mx-2' target='_blank'><i class='fas fa-phone'></i> اطلب الأن</a> <a href='Product.html?i=" + slider[0] + "' class='btn btn-primary font-weight-bold mx-2'><i class='fas fa-info-circle'></i> التفاصيل</a> </div> </div>")
+        //HomeSlider.insertAdjacentHTML('beforeend', " <div class='carousel-item active' data-interval='3000'> <img src='" + infolist[0].cover + "' class='d-block w-100 fullimg'> <div class='carousel-caption bg-dark '> <h4>" + infolist[0].about + "</h4> <hr /> <a href='https://wa.me/2" + infolist[0].phone + "?text=25% Offer' class='btn btn-success font-weight-bold mx-2' target='_blank'><i class='fas fa-phone'></i> اتصل الان و احصل على خصم 25%</a>  </div> </div>")
 
-        for (var i = 1; i < slider.length; i++) {
-            HomeSlider.insertAdjacentHTML('beforeend', " <div class='carousel-item ' data-interval='3000'> <img src='" + prolist[slider[i]].image[0] + "' class='d-block w-100 fullimg'> <div class='carousel-caption bg-dark '> <h4>" + prolist[slider[i]].name + "</h4> <hr /> <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[slider[i]].name + "' class='btn btn-success font-weight-bold mx-2' target='_blank'><i class='fas fa-phone'></i> اطلب الأن</a> <a href='Product.html?i=" + slider[i] + "' class='btn btn-primary font-weight-bold mx-2'><i class='fas fa-info-circle'></i> التفاصيل</a> </div> </div>")
+        for (var i = 0; i < slider.length; i++) {
+            var cl = '';
+            if (i==0) {
+                cl = 'active';
+            }
+            HomeSlider.insertAdjacentHTML('beforeend', " <div class='carousel-item "+cl+"' data-interval='3000'> <img src='" + prolist[slider[i]].image[0] + "' class='d-block w-100 fullimg'> <div class='carousel-caption bg-dark '> <h4>" + prolist[slider[i]].name + "</h4> <hr /> <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[slider[i]].name + "' class='btn btn-success font-weight-bold mx-2' target='_blank'><i class='fas fa-phone'></i> اطلب الأن</a> <a href='Product.html?i=" + slider[i] + "' class='btn btn-primary font-weight-bold mx-2'><i class='fas fa-info-circle'></i> التفاصيل</a> </div> </div>")
         }
 
         if (cat != '' && cat != null)
