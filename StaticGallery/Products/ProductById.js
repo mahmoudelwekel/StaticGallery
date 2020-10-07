@@ -29,10 +29,10 @@
 
                 var imagelist = prolist[i].image
 
-                slider.insertAdjacentHTML('beforeend', "<div class='carousel-item active' data-interval='2000'><img src='" + imagelist[0] + "' class='d-block w-100 fullimg'style='height: 253px; object-fit: contain;' ></div>");
+                slider.insertAdjacentHTML('beforeend', "<div class='carousel-item active' data-interval='2000'><img src='" + imagelist[0] + "' class='d-block w-100 fullimg'style='height: 325px; object-fit: contain;' ></div>");
 
                 for (var i = 1; i < imagelist.length; i++) {
-                    slider.insertAdjacentHTML('beforeend', "<div class='carousel-item' data-interval='2000'><img src='" + imagelist[i] + "' class='d-block w-100 fullimg' style='height: 253px; object-fit: contain;' ></div>");
+                    slider.insertAdjacentHTML('beforeend', "<div class='carousel-item' data-interval='2000'><img src='" + imagelist[i] + "' class='d-block w-100 fullimg' style='height: 325px; object-fit: contain;' ></div>");
                 }
 
                 $(".fullimg").click(function () {

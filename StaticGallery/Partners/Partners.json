@@ -24,10 +24,15 @@
     "image": "Partners/images/latte.jpg",
     "link": "https://www.facebook.com/latte.cafe2020"
   },
-{
+  {
     "name": "Java Store",
     "image": "Partners/images/java.jpg",
     "link": "https://www.facebook.com/JAVA.coffee.store"
+  },
+  {
+    "name": "شركة تبارك",
+    "image": "Partners/images/tabarak.jpg",
+    "link": "https://www.facebook.com/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D8%A8%D8%A7%D8%B1%D9%83-1539018672822198"
   },
   {
     "name": "سيف الفارس",
