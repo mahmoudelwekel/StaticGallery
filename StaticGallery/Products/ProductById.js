@@ -12,7 +12,11 @@
 
                 var i = getParameterByName('i');
                 document.getElementById("titletag").innerText = infolist[0].name + ' - ' + prolist[i].name;
-                $('meta[name=description]').attr('content', infolist[0].name + ' - ' + prolist[i].name + ' - ' + infolist[0].about);
+                var imagelist = prolist[i].image
+
+                $("meta[name='twitter:title'],meta[itemprop='name'],meta[property='og:title']").attr('content', prolist[i].name);
+                $("meta[name='twitter:description'],meta[itemprop='description'],meta[property='og:description'],meta[name='description']").attr('content', infolist[0].name + ' - ' + prolist[i].name );
+                $("meta[name='twitter:image'],meta[itemprop='image'],meta[property='og:image']").attr('content', imagelist[0]);
 
                 var name = document.getElementById('productName');
                 var details = document.getElementById('productDetails');
@@ -27,7 +31,6 @@
                 privacy.insertAdjacentHTML('beforeend', Categories[prolist[i].category].description + "<a class='h6 font-weight-bold text-info ' href='index.html?cat=" + prolist[i].category + "'>المزيد عن قسم " + Categories[prolist[i].category].name + "</a>");
                 order.insertAdjacentHTML('beforeend', "<a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success btn-lg font-weight-bold w-100' target='_blank'><i class='fas fa-phone'></i> اطلب الأن</a>");
 
-                var imagelist = prolist[i].image
 
                 slider.insertAdjacentHTML('beforeend', "<div class='carousel-item active' data-interval='2000'><img src='" + imagelist[0] + "' class='d-block w-100 fullimg'style='height: 325px; object-fit: contain;' ></div>");
 
