@@ -83,7 +83,7 @@
     "comment": "Hippo"
 
   },
-    {
+  {
     "name": "Seif Elfares",
     "mac": "XMWLHQKvgfvRjblEBLCRkhD23CAaRB/zDmduQbFfZOCyI9uNn7r9jTPFSBde+096Pq9/QKYKSqq8i+brijtmey1Wvh/nv1P3HQklFtKQ2r0=",
     "start": "07/08/2020",
@@ -129,6 +129,30 @@
     "phone": "",
     "link": "",
     "comment": "Multi Store"
+
+  },
+  {
+    "name": "سنتر حنين ماستر",
+    "mac": "Xrx98DKn2XL5I2PdpyRIEwYiTUn1wjWW8iuZsLeVHxc=",
+    "start": "07/08/2020",
+    "end": "07/08/2025",
+    "org": "UPTOP",
+    "place": "kafr elshekh",
+    "phone": "",
+    "link": "",
+    "comment": "Store"
+
+  },
+  {
+    "name": "سنتر حنين كوبى",
+    "mac": "XE5xxZiptd4Sis9Kks1KMoZTmPafvjA3oGKNZf/f4oZeVVP/bc7WrE+/QFnfxXyQ",
+    "start": "07/08/2020",
+    "end": "07/08/2025",
+    "org": "UPTOP",
+    "place": "kafr elshekh",
+    "phone": "",
+    "link": "",
+    "comment": "Store"
 
   }
 
