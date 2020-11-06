@@ -1,7 +1,8 @@
 ﻿$(document).ready(function () {
 
     var d = new Date();
-    var nocach = d.getFullYear() + d.getMonth() + d.getDay() + d.getHours() + d.getMinutes();
+    //var nocach = d.getFullYear() + d.getMonth() + d.getDay() + d.getHours() + d.getMinutes();
+    var nocach = d.getTime();
 
     $.getJSON('Partners/Partners.json?nocache=' + nocach, function (json) {
     var Partnerslist = json;

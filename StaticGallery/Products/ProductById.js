@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     var d = new Date();
-    var nocach = d.getFullYear() + d.getMonth() + d.getDay() + d.getHours() + d.getMinutes();
+    var nocach = d.getTime();
 
     $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
         var infolist = json;
@@ -28,7 +28,7 @@
                 name.insertAdjacentHTML('beforeend', prolist[i].name);
                 details.insertAdjacentHTML('beforeend', prolist[i].description);
                 price.insertAdjacentHTML('beforeend', prolist[i].price);
-                privacy.insertAdjacentHTML('beforeend', Categories[prolist[i].category].description + "<a class='h6 font-weight-bold text-info ' href='index.html?cat=" + prolist[i].category + "'>المزيد عن قسم " + Categories[prolist[i].category].name + "</a>");
+                privacy.insertAdjacentHTML('beforeend', Categories[prolist[i].category].description + "<a class='h6 font-weight-bold text-info ' href='Gallery.html?cat=" + prolist[i].category + "'>المزيد عن قسم " + Categories[prolist[i].category].name + "</a>");
                 order.insertAdjacentHTML('beforeend', "<a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success btn-lg font-weight-bold w-100' target='_blank'><i class='fas fa-phone'></i> اطلب الأن</a>");
 
 

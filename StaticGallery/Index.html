@@ -7,20 +7,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="author" content="Gipsy - 01097154297 - fb.com/Gipsy.EG">
-    
+
     <title id="titletag"></title>
-    <meta name="description" content="" >
-    <link rel="icon" href="" type="image/png"/>
+    <meta name="description" content="">
+    <link rel="icon" href="" type="image/png" />
     <link rel="apple-touch-icon" href="" />
-    
+
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">
-    
+
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="" >
+    <meta itemprop="name" content="">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="">
 
@@ -37,7 +37,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
-    <link href="assets/jquery.paginate.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
 
@@ -52,6 +51,7 @@
             font-family: 'Cairo';
             background-attachment: fixed;
             background-position: center;
+            padding-top: 66px
         }
 
         .hover:hover {
@@ -92,175 +92,221 @@
             height: 25vh;
             object-fit: cover;
         }
+
+        .opacity {
+            opacity: .90;
+        }
+
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+        .carousel-item {
+            height: 32rem;
+        }
+
+            .carousel-item > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+                height: 32rem;
+            }
+
+
+
+        .featurette-divider {
+            margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+        }
+
+        .colored {
+            color: black;
+        }
     </style>
 
-
 </head>
-<body class="pt-5">
-   
-    
-    
-    <!--<div id="divInstall">
-        <button id="butInstall">
-            probut
-        </button>
-    </div>-->
+<body class="">
 
 
-    <nav class="navbar navbar-expand-lg fixed-top  shadow-sm  navbar-light bg-light" style="opacity:1;">
-        <div class="container">
+    <header id="MasterPageHeader">
+    </header>
 
-
-            <a href="Index.html" class="navbar-brand font-weight-bolder">
-                <img class="img-fluid mr-2 animate__animated animate__swing animate__slower animate__repeat-2	2" src="" id="logo" style="height: 40px" />
-                <span class="font-weight-bolder" id="brandName"></span>
+    <main id="MasterPageMain">
+        <div id="carouselExampleInterval" class="carousel slide  bg-white  " data-ride="carousel">
+            <div class="carousel-inner shadow " id="HomeSlider">
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" dir="rtl" id="navbarNavAltMarkup">
-                <ul class="navbar-nav ml-auto p-0" dir="rtl">
-                    <li class='nav-item  '>
-                        <a href='Index.html' class='nav-link active font-weight-bold text-right'><i class="fas fa-home"></i>&nbsp;&nbsp;الرئيسية</a>
-                    </li>
-                    <li class="border"></li>
-                    <li class='nav-item '>
-                        <a href='Index.html#patners' class='nav-link  font-weight-bold text-right'><i class="fas fa-users"></i>&nbsp;&nbsp;شركاء النجاح</a>
-                    </li>
-                    <li class="border"></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle font-weight-bold text-right" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-laptop-house"></i>&nbsp;&nbsp;الأقسام&nbsp;&nbsp;
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" id="catBtns" aria-labelledby="navbarDropdown">
-
-                        </div>
-                    </li>
-                </ul>
-                <!--<div class="form-inline my-2 my-lg-0" dir="ltr">
-
-                </div>-->
-            </div>
+            <a class="carousel-control-next " href="#carouselExampleInterval" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    </nav>
 
+        <div role="main" class="text-primary pb-5 font-weight-bold" style="position:relative">
+            <div class="bg-white opacity " style="position:absolute;width:100%;bottom:0;left:0;top:0px;z-index:-9999999999999"></div>
 
-
-
-    <div class="container  text-primary font-weight-bold  mt-3 pt-4" style="opacity: .99;" id="masterpagecontainer">
-
-        <div class="jumbotron shadow border border-primary font-weight-bold text-center py-4 " id="masteragejumbotron">
-            <div class="input-group input-group-lg">
-                <input type="search" id="Text1" class="form-control text-center" placeholder="البحث فى الموقع" aria-label="Username" aria-describedby="basic-addon1">
-                <div class="input-group-append">
-                    <span class="input-group-text" id="basic-addon1">
-                        <i class="fas fa-search"></i>
-                    </span>
-                </div>
-            </div>
-
-
-            <div class="<!--border rounded border-primary--> ">
-                <div id="carouselExampleInterval" class="carousel slide carousel-fade bg-white rounded mt-3" style="height:25vh;" data-ride="carousel">
-                    <div class="carousel-inner shadow rounded" id="HomeSlider">
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next " href="#carouselExampleInterval" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-
-                </div>
-            </div>
-
-            <marquee direction="right" class="mb-0 mt-3 text-danger" id="adsMarquee" onmouseover="this.stop()" onmouseout="this.start()" scrolldelay="0" scrollamount="8">
+            <marquee direction="right" dir="rtl" class="text-danger my-5" id="adsMarquee" onmouseover="this.stop()" onmouseout="this.start()" scrolldelay="0" scrollamount="8">
             </marquee>
 
-
-            <div class="row paginationspages" id="pageRow">
-
-            </div>
-
-            <div class="row ">
-                <div class="col " id="cate_descrip">
-
-                </div>
-            </div>
-            <span id="patners"></span>
-        </div>
-
-
-        <div class="jumbotron shadow border border-primary font-weight-bold text-center py-5 ">
-            <h2 class="font-weight-bolder">شركاء النجاح</h2>
-            <br />
-            <hr style="width:70%;margin-left:15%" />
-            <div class="owl-carousel owl-theme text-dark" id="PartnersDiv">
-
-            </div>
-        </div>
-
-        <!--<div class="addthis_inline_share_toolbox_d5na mb-3"></div>-->
-        <!--<div class="sharethis-inline-share-buttons mt-3 mb-2"></div>-->
-
-    </div>
-
-
-
-
-    <div style="position: relative; border-top: 2px solid #0094ff; opacity: .75;" class="text-dark font-weight-bold bg-light " id="message">
-        <div class="container">
-            <div class="row ">
-
-                <div class="col-md-8 text-right py-5" id="placeinfo">
-                    <h4 class="font-weight-bold" id="placename"></h4>
-                    <hr />
+            <div class="container text-center">
+                <div class="row ">
+                    <div class="col-md-5 d-flex align-items-center">
+                        <img class="img-fluid mx-auto" src="Images/iMac.png" />
+                    </div>
+                    <div class="col-md-7">
+                        <div class=" text-center">
+                            <h2 class="animated fadeInDown bold"><strong>Gipsy</strong></h2>
+                            <p class="animated fadeInUp bold" style="font-size:larger ;direction:rtl" data-original-title="" title="">
+                                <span class="colored"> Softwares Everywhere<br>برامجنا فى كل مكان</span>
+                                <br />
+                                <br />
+                                يوجد لدينا جميع انواع برامج إدارة المحلات التجارية و المخازن
+                                <br>
+                                ( مطعم - كافيه - بلاى ستيشن - سوبر ماركت - سنترال - ملابس - أحذية - إليكترونيات - صيدلية )
+                                <br>
+                                <br>
+                                و جميع مستلزمات البرامج
+                                <br>
+                                ( أجهزة كمبيوتر - طابعات - قارئ الباركود )
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
+                <hr class="featurette-divider">
 
-                <div class="col-md-4 text-right py-5">
-                    <h4 class="font-weight-bold">اتصل بنا</h4>
-                    <hr />
-                    <a href="#" id="call" target="_blank" class="text-decoration-none">
-                        <i class="fas fa-phone-square fa-3x"
-                           style="color: darkslategrey;"></i>
-                    </a>
-                    <a href="#" id="whats" target="_blank" class="text-decoration-none">
-                        <i class="fab fa-whatsapp-square fa-3x"
-                           style="color: #25D366;"></i>
-                    </a>
-                    <a href="#" id="face" target="_blank" class="text-decoration-none">
-                        <i class="fab fa-facebook-square fa-3x"
-                           style="color: #3b5998;"></i>
-                    </a>
-                    <a href="#" id="messenger" target="_blank" class="text-decoration-none">
-                        <i class="fab fa-facebook-messenger fa-3x"
-                           style="color: #00C6FF;"></i>
-                    </a>
-                    <a href="#" id="insta" target="_blank" class="text-decoration-none">
-                        <i class="fab fa-instagram-square fa-3x"
-                           style="color: #3f729b ;"></i>
+                <div class=" text-center">
+                    <h1 class="font-weight-bold">شاهد جميع منتاجتنا و اختر ما يناسبك</h1>
+
+                    <a href="Gallery.html" target="_blank" class="btn mt-3 btn-primary btn-lg animated fadeInUp">
+                        <i class="fas fa-gem"></i> عرض جميع المنتجات
                     </a>
 
                 </div>
 
+                <hr class="featurette-divider">
 
+                <div class="row featurette">
+                    <div class="col-md-5 d-flex align-items-center  order-md-2">
+                        <img class=" img-fluid mx-auto" src="Images/screen.png" />
+                    </div>
+                    <div class="col-md-7">
+                        <div class=" text-center">
+                            <h2 class="animated fadeInDown bold"><strong>بتصميم <span class="colored"> بسيط و سهل</span></strong></h2>
+                            <p class="animated fadeInUp bold" style="font-size:larger" data-original-title="" title="">
+                                سهولة الأستخدام و بساطة التصميم من أجل راحة المستخدم
+                                <br>
+                                <br>
+                                و نعمل على أقل أمكانيات ممكنة بدقة و كفاءة عالية
+                                <br>
+                                <br>
+                                خصائيص و مزايا كثيرة و متميزة بأقل سعر
+                            </p>
+                            <h2 class="animated fadeInDown bold"><strong>هنعرفك معنى<span class="colored"> الإدارة</span></strong></h2>
+                            <br />
+                            <a href="#" class="btn btn-success btn-lg animated fadeInUp whatsLink">
+                                <i class="fab fa-whatsapp"></i> اطلب الأن
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
+                <hr class="featurette-divider">
+
+                <div class="row text-center" id="categoriesHome" dir="rtl">
+                    <h2 class="w-100 font-weight-bold pb-4">الأقسام و الخدمات</h2>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="card-deck text-center">
+                    <h2 class="w-100 font-weight-bold pb-4 ">أنظمة الدفع</h2>
+                    <div class="card mb-4 shadow-sm ">
+                        <div class="card-header bg-dark text-light">
+                            <h3 class="my-0 font-weight-bold ">شهرى</h3>
+                            <br />
+                            إشتراك شهرى لإستخدام البرنامج
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> شهر تجربيى</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-times"></i> تقسيط سعر البرنامج</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-times"></i> ضمان إسترجاع النقود</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> نسخ احتياطى للبيانات</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center">
+                                <i class="fas fa-check"></i>  دعم فنى مجاناً مدى الحياة
+                            </li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center">
+                                <i class="fas fa-check"></i>  متابعة دورية و صيانة
+                            </li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> الدعم فنى مجاناً بالانترنت</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> طلب تعديلات</li>
+                        </ul>
+                        <a href="#" class="btn card-footer btn-lg btn-block font-weight-bold bg-success btn-success  whatsLink"><i class='fab fa-whatsapp'></i> اطلب الأن</a>
+                    </div>
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-dark text-light">
+                            <h3 class="my-0 font-weight-bold ">سنوى</h3>
+                            <br />
+                            إشتراك سنوى لإستخدام البرنامج
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> شهر تجربيى</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-times"></i> تقسيط سعر البرنامج</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-times"></i> ضمان إسترجاع النقود</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> نسخ احتياطى للبيانات</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center">
+                                <i class="fas fa-check"></i>  دعم فنى مجاناً مدى الحياة
+                            </li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center">
+                                <i class="fas fa-check"></i>  متابعة دورية و صيانة
+                            </li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> الدعم فنى مجاناً بالانترنت</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> طلب تعديلات</li>
+                        </ul>
+                        <a href="#" class="btn card-footer btn-lg btn-block font-weight-bold bg-success btn-success  whatsLink"><i class='fab fa-whatsapp'></i> اطلب الأن</a>
+
+                    </div>
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-danger text-light">
+                            <h3 class="my-0 font-weight-bold ">مفتوح</h3>
+                            <br />
+                            إشتراك دائم لإستخدام البرنامج
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> شهر تجربيى</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> تقسيط سعر البرنامج</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> ضمان إسترجاع النقود</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> نسخ احتياطى للبيانات</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> دعم فنى مجاناً لمدة شهر</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-dollar-sign"></i> بعدها الدعم بمقابل مادى</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-check"></i> الدعم فنى مجاناً بالانترنت</li>
+                            <li class="list-group-item bg-light  d-flex justify-content-between align-items-center"><i class="fas fa-times"></i> طلب تعديلات</li>
+                        </ul>
+                        <a href="#" class="btn card-footer btn-lg btn-block font-weight-bold bg-success btn-success  whatsLink"><i class='fab fa-whatsapp'></i> اطلب الأن</a>
+
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="pb-4">
+                    <h2 class="w-100 font-weight-bolder pb-4">شركاء النجاح</h2>
+                    <div class="owl-carousel owl-theme text-dark" id="PartnersDiv">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-
-
-
-    <div class="text-center text-light p-3" style="background-color: #27498C;">
-        <a href="https://fb.com/Gipsy.EG" target="_blank" class="font-weight-bold text-decoration-none text-light">Powered by Gipsy</a>
-    </div>
-
+    </main>
+    <footer id="MasterPageFooter">
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="LoadMasterPage.js?version=20201106"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
@@ -269,17 +315,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 
-    <!--<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5ea76d017ddbf2001271a27c&product=inline-share-buttons&cms=sop' async='async'></script>-->
-    <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d62b17de0bd801e"   ></script>-->
 
-    <script src="assets/jquery.paginate.js"></script>
+    <script src="Info/FillInfo.js?version=20201106"></script>
+    <script src="Categories/FillCategories.js?version=20201106"></script>
+    <script src="Partners/FillPartners.js?version=20201106"></script>
 
-    <script src="Info/FillInfo.js?version=5"></script>
-    <script src="Categories/FillCategories.js?version=5"></script>
-    <script src="Products/IndexFill.js?version=5"></script>
-    <script src="Partners/FillPartners.js?version=5"></script>
-    <script src="Products/indexSearch.js?version=5"></script>
-
+    <script src="Products/IndexFill.js?version=20201106"></script>
 
     <!-- Load Facebook SDK for JavaScript -->
     <!--<div id="fb-root"></div>

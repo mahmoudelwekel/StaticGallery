@@ -78,232 +78,156 @@
 </head>
 <body class="pt-5">
 
-    <nav class="navbar navbar-expand-lg fixed-top  shadow-sm  navbar-light bg-light" style="opacity:1;">
-        <div class="container">
+
+    <header id="MasterPageHeader">
+    </header>
+
+    <main id="MasterPageMain">
+        <div class="container  text-primary font-weight-bold  mt-3 pt-4" style="opacity: .95;" id="masterpagecontainer">
+
+            <div class="jumbotron shadow border border-primary font-weight-bold text-center py-4 " id="masteragejumbotron">
 
 
-            <a href="Index.html" class="navbar-brand font-weight-bolder">
-                <img class="img-fluid mr-2 animate__animated animate__swing animate__slower animate__repeat-2	2" src="" id="logo" style="height: 40px" />
-                <span class="font-weight-bolder" id="brandName"></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" dir="rtl" id="navbarNavAltMarkup">
-                <ul class="navbar-nav ml-auto p-0" dir="rtl">
-                    <li class='nav-item  '>
-                        <a href='Index.html' class='nav-link active font-weight-bold text-right'><i class="fas fa-home"></i>&nbsp;&nbsp;الرئيسية</a>
-                    </li>
-                    <li class="border"></li>
-                    <li class='nav-item '>
-                        <a href='Index.html#patners' class='nav-link  font-weight-bold text-right'><i class="fas fa-users"></i>&nbsp;&nbsp;شركاء النجاح</a>
-                    </li>
-                    <li class="border"></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle font-weight-bold text-right" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-laptop-house"></i>&nbsp;&nbsp;الأقسام&nbsp;&nbsp;
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" id="catBtns" aria-labelledby="navbarDropdown">
-
-                        </div>
-                    </li>
-                </ul>
-                <!--<div class="form-inline my-2 my-lg-0" dir="ltr">
-
-                </div>-->
-            </div>
-        </div>
-    </nav>
-
-
-    <div class="container  text-primary font-weight-bold  mt-3 pt-4" style="opacity: .95;" id="masterpagecontainer">
-
-        <div class="jumbotron shadow border border-primary font-weight-bold text-center py-4 " id="masteragejumbotron">
-
-
-            <h4 class="font-weight-bold" dir="rtl" id="productName"></h4>
-            <hr style="width:70%;margin-left:15%" />
+                <h4 class="font-weight-bold" dir="rtl" id="productName"></h4>
+                <hr style="width:70%;margin-left:15%" />
 
 
 
-            <div class="row paginationspages" id="pageRow">
+                <div class="row paginationspages" id="pageRow">
 
 
 
-                <div class="col-md-6 py-1">
-                    <div id="carouselExampleInterval" class="carousel slide border border-primary rounded bg-white " style="height:327px;" data-ride="carousel">
-                        <div class="carousel-inner rounded" id="productSlider">
+                    <div class="col-md-6 py-1">
+                        <div id="carouselExampleInterval" class="carousel slide border border-primary rounded bg-white " style="height:327px;" data-ride="carousel">
+                            <div class="carousel-inner rounded" id="productSlider">
+
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next " href="#carouselExampleInterval" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
 
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next " href="#carouselExampleInterval" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon bg-dark rounded-circle p-1" style="background-origin: content-box;" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-
                     </div>
-                </div>
-                <div class="col-md-6 py-1">
-                    <div class="accordion shadow-sm border border-primary w-100 bg-light text-right rounded" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between  align-items-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        <i class="fas fa-info-circle fa-lg"></i>
-                                        التفاصيل و المميزات
-                                    </button>
-                                </h2>
-                            </div>
+                    <div class="col-md-6 py-1">
+                        <div class="accordion shadow-sm border border-primary w-100 bg-light text-right rounded" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between  align-items-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            <i class="fas fa-info-circle fa-lg"></i>
+                                            التفاصيل و المميزات
+                                        </button>
+                                    </h2>
+                                </div>
 
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body" id="productDetails" dir="rtl">
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body" id="productDetails" dir="rtl">
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="fas fa-hand-holding-usd fa-lg"></i>
-                                        العروض و الأسعار
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body" id="productPrices" dir="rtl">
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="fas fa-hand-holding-usd fa-lg"></i>
+                                            العروض و الأسعار
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body" id="productPrices" dir="rtl">
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 
-                                        <i class="fas fa-user-shield fa-lg"></i>
-                                        الشروط و الأحكام
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body" id="productPrivacy" dir="rtl">
+                                            <i class="fas fa-user-shield fa-lg"></i>
+                                            الشروط و الأحكام
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body" id="productPrivacy" dir="rtl">
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingfour">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                        <i class="fas fa-share-alt fa-lg"></i>
-                                        شارك مع الأصدقاء
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <div class="sharethis-inline-share-buttons w-100"></div>
+                            <div class="card">
+                                <div class="card-header" id="headingfour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                            <i class="fas fa-share-alt fa-lg"></i>
+                                            شارك مع الأصدقاء
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="sharethis-inline-share-buttons w-100"></div>
+                                    </div>
                                 </div>
                             </div>
+                            <!--<div class="card bg-success">
+                                <div class="card-header" id="headingfour">
+                                    <h2 class="mb-0" id="productOrder" >-->
+                            <!--<button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                <i class="fas fa-share-alt fa-lg"></i>
+                                شارك مع الأصدقاء
+                            </button>-->
+                            <!--</h2>
+                                </div>
+                            </div>-->
                         </div>
-                        <!--<div class="card bg-success">
-                            <div class="card-header" id="headingfour">
-                                <h2 class="mb-0" id="productOrder" >-->
-                                    <!--<button class="btn btn-link collapsed font-weight-bolder text-decoration-none w-100 d-flex justify-content-between align-items-center" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                        <i class="fas fa-share-alt fa-lg"></i>
-                                        شارك مع الأصدقاء
-                                    </button>-->
-                                <!--</h2>
-                            </div>
-                        </div>-->
+
+                        <div class="" id="productOrder">
+                            <br />
+
+
+                        </div>
                     </div>
-                
-                    <div class="" id="productOrder">
-                    <br />
 
-                
+                    <div class="col-md-12">
+                        <br />
+
+                        <marquee direction="right" dir="rtl" class="text-danger" id="adsMarquee" onmouseover="this.stop()" onmouseout="this.start()" scrolldelay="0" scrollamount="8">
+                        </marquee>
                     </div>
-                </div>
 
-                <div class="col-md-12">
-                    <br />
 
-                    <marquee direction="right" class="text-danger" id="adsMarquee" onmouseover="this.stop()" onmouseout="this.start()" scrolldelay="0" scrollamount="8">
-                    </marquee>
                 </div>
 
 
             </div>
 
 
+
+            <!--<div class="addthis_inline_share_toolbox_d5na mb-3"></div>-->
+            <!--<div class="sharethis-inline-share-buttons mt-3 mb-2"></div>-->
+
         </div>
+    </main>
 
 
-
-        <!--<div class="addthis_inline_share_toolbox_d5na mb-3"></div>-->
-        <!--<div class="sharethis-inline-share-buttons mt-3 mb-2"></div>-->
-
-    </div>
-
-
-
-
-    <div style="position: relative; border-top: 2px solid #0094ff; opacity: .75;" class="text-dark font-weight-bold bg-light " id="message">
-        <div class="container">
-            <div class="row ">
-
-                <div class="col-md-8 text-right py-5" id="placeinfo">
-                    <h4 class="font-weight-bold" id="placename"></h4>
-                    <hr />
-                </div>
-
-
-                <div class="col-md-4 text-right py-5">
-                    <h4 class="font-weight-bold">اتصل بنا</h4>
-                    <hr />
-                    <a href="#" id="call" target="_blank" class="text-decoration-none">
-                        <i class="fas fa-phone-square fa-3x"
-                           style="color: darkslategrey;"></i>
-                    </a>
-                    <a href="#" id="whats" target="_blank" class="text-decoration-none">
-                        <i class="fab fa-whatsapp-square fa-3x"
-                           style="color: #25D366;"></i>
-                    </a>
-                    <a href="#" id="face" target="_blank" class="text-decoration-none">
-                        <i class="fab fa-facebook-square fa-3x"
-                           style="color: #3b5998;"></i>
-                    </a>
-                    <a href="#" id="messenger" target="_blank" class="text-decoration-none">
-                        <i class="fab fa-facebook-messenger fa-3x"
-                           style="color: #00C6FF;"></i>
-                    </a>
-                    <a href="#" id="insta" target="_blank" class="text-decoration-none">
-                        <i class="fab fa-instagram-square fa-3x"
-                           style="color: #3f729b ;"></i>
-                    </a>
-
-                </div>
-
-
-
-            </div>
-        </div>
-    </div>
-
-    <div class="text-center text-light p-3" style="background-color: #27498C;">
-        <a href="https://fb.com/Gipsy.EG" target="_blank" class="font-weight-bold text-decoration-none text-light">Powered by Gipsy</a>
-    </div>
+    <footer id="MasterPageFooter">
+    </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="LoadMasterPage.js?version=20201106"></script>
 
-    <script src="Info/FillInfo.js?version=5"></script>
-    <script src="Categories/FillCategories.js?version=5"></script>
-    <script src="Products/ProductById.js?version=5"></script>
+    <script src="Info/FillInfo.js?version=20201106"></script>
+    <script src="Categories/FillCategories.js?version=20201106"></script>
+    <script src="Products/ProductById.js?version=20201106"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>

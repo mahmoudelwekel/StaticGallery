@@ -4,7 +4,7 @@ $(document).ready(function () {
     var div = document.getElementById('pageRow');
 
     var d = new Date();
-    var nocach = d.getFullYear() + d.getMonth() + d.getDay() + d.getHours() + d.getMinutes();
+    var nocach = d.getTime();
 
 
     $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
