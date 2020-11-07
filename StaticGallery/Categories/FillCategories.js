@@ -2,8 +2,9 @@
 
 
 
+$(document).ready(function () {
     var d = new Date();
-    var nocach = '20201108';
+    var nocach = '20201107';
     
 $.getJSON('Categories/Categories.json?nocache=' + nocach, function (json) {
     var catnav = document.getElementById('catBtns');
@@ -45,11 +46,8 @@ $.getJSON('Categories/Categories.json?nocache=' + nocach, function (json) {
 
 
     }
-
-
-    console.log('Categories');
-
 });
 
 
 
+});

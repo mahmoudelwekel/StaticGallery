@@ -1,8 +1,9 @@
-﻿    var cat = getParameterByName('cat');
+﻿$(document).ready(function () {
+    var cat = getParameterByName('cat');
     var div = document.getElementById('pageRow');
 
     var d = new Date();
-    var nocach = '20201108';
+    var nocach = '20201107';
 
 $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
     var infolist = json;
@@ -73,14 +74,11 @@ $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
 
         }
 
-
-
-        console.log('Gallery');
-
     });
 });
 
 
+});
 
 
 

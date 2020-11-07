@@ -1,7 +1,8 @@
-﻿    var div = document.getElementById('pageRow');
+﻿$(document).ready(function () {
+    var div = document.getElementById('pageRow');
 
     var d = new Date();
-    var nocach = '20201108';
+    var nocach = '20201107';
 
 
 
@@ -32,11 +33,9 @@
         //    perPage: 12,
         //});
 
-
-        console.log('Licenses');
-
     });
 
 
 
+});
 
