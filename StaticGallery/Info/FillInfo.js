@@ -11,9 +11,8 @@ function getParameterByName(name, url) {
 
 
 
-$(document).ready(function () {
     var d = new Date();
-    var nocach = '20201107';
+    var nocach = '20201108';
 
 $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
     var infolist  = json;
@@ -41,5 +40,7 @@ $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
     $("meta[name='twitter:image'],meta[itemprop='image'],meta[property='og:image']").attr('content', infolist[0].cover);
 
 
+
+    console.log('info');
 });
-});
+

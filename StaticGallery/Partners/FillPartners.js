@@ -1,10 +1,8 @@
-﻿$(document).ready(function () {
-
+﻿
     var d = new Date();
     //var nocach = d.getFullYear() + d.getMonth() + d.getDay() + d.getHours() + d.getMinutes();
-    var nocach = '20201107';
-
-    $.getJSON('Partners/Partners.json?nocache=' + nocach, function (json) {
+var nocach = '20201108';
+$.getJSON('Partners/Partners.json?nocache=' + nocach, function (json) {
     var Partnerslist = json;
     var PartnersDiv = document.getElementById('PartnersDiv');
 
@@ -34,5 +32,14 @@
         }
 
     })
-});
+
+
+
+
+    console.log('Partners');
+
+
+
+
+
 });

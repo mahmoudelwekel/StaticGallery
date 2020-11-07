@@ -1,10 +1,9 @@
 ﻿//البحث
-$(document).ready(function () {
     var value;
     var div = document.getElementById('pageRow');
 
     var d = new Date();
-    var nocach = '20201107';
+    var nocach = '20201108';
 
 
     $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
@@ -47,5 +46,4 @@ $(document).ready(function () {
 
 
 
-});
 

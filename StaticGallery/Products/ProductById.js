@@ -1,6 +1,5 @@
-﻿$(document).ready(function () {
-    var d = new Date();
-    var nocach = '20201107';
+﻿    var d = new Date();
+    var nocach = '20201108';
 
     $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
         var infolist = json;
@@ -44,13 +43,17 @@
                     $('#exampleModal').modal('show');
                 });
 
+
+                console.log('Product');
+
+
             });
 
         });
     });
 
 
-});
+
 
 
 function getParameterByName(name, url) {
