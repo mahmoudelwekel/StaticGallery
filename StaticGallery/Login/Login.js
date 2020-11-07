@@ -9,7 +9,7 @@
 
             var reqUsers = new XMLHttpRequest();
 
-            reqUsers.open('GET', 'Login/Users.json?nocache=' + (new Date()).getTime());
+            reqUsers.open('GET', 'Login/Users.json?nocache=20201107');
             reqUsers.onload = function () {
                 var User = JSON.parse(reqUsers.responseText);
 

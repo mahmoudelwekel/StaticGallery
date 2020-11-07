@@ -2,7 +2,7 @@
     var div = document.getElementById('pageRow');
 
     var d = new Date();
-    var nocach = d.getTime();
+    var nocach = '20201107';
 
 
 
