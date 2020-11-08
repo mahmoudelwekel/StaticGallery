@@ -120,7 +120,13 @@
         .featurette-divider {
             margin: 5rem 0; /* Space out the Bootstrap <hr> more */
         }
-
+        .notify-badge {
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            font-size: 17px;
+            background: red;
+        }
     </style>
 
 </head>
@@ -152,10 +158,10 @@
 
             <div class="container text-center">
                 <div class="row ">
-                    <div class="col-md-5 d-flex align-items-center">
+                    <div class="col-md-5 d-flex align-items-center  order-md-2">
                         <img class="img-fluid mx-auto hover" src="Images/iMac.png" />
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7  ">
                         <div class=" text-center">
                             <h2 class="animated fadeInDown bold"><strong>Gipsy</strong></h2>
                             <p class="animated fadeInUp bold" style="font-size:larger ;direction:rtl" data-original-title="" title="">
@@ -189,7 +195,7 @@
                 <hr class="featurette-divider">
 
                 <div class="row featurette">
-                    <div class="col-md-5 d-flex align-items-center  order-md-2">
+                    <div class="col-md-5 d-flex align-items-center">
                         <img class=" img-fluid mx-auto hover" src="Images/screen.png" />
                     </div>
                     <div class="col-md-7">
@@ -221,9 +227,11 @@
 
                 <hr class="featurette-divider">
 
-                <div class="card-deck text-center ">
+                <div class="card-deck text-center px-1">
                     <h2 class="w-100 font-weight-bold pb-4 ">أنظمة الدفع</h2>
                     <div class="card mb-4 shadow-sm border-dark hover">
+                        <span class="notify-badge badge badge-danger p-2 rounded-pill" dir="rtl">خصم 30%</span>
+
                         <div class="card-header bg-dark text-light">
                             <h3 class="my-0 font-weight-bold ">شهرى</h3>
                             <br />
@@ -246,6 +254,7 @@
                         <a href="#" class="btn card-footer btn-lg btn-block font-weight-bold bg-dark btn-dark  whatsLink"><i class='fab fa-whatsapp'></i> اطلب الأن</a>
                     </div>
                     <div class="card mb-4 shadow-sm border-dark hover">
+                        <span class="notify-badge badge badge-danger p-2 rounded-pill" dir="rtl">خصم 30%</span>
                         <div class="card-header bg-dark text-light">
                             <h3 class="my-0 font-weight-bold ">سنوى</h3>
                             <br />
@@ -269,6 +278,7 @@
 
                     </div>
                     <div class="card mb-4 shadow-sm border-dark hover">
+                        <span class="notify-badge badge badge-danger p-2 rounded-pill" dir="rtl">خصم 50%</span>
                         <div class="card-header bg-dark text-light">
                             <h3 class="my-0 font-weight-bold ">مفتوح</h3>
                             <br />

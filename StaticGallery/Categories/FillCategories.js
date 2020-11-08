@@ -21,7 +21,7 @@ $.getJSON('Categories/Categories.json?nocache=' + nocach, function (json) {
         catnav.insertAdjacentHTML('beforeend', "<a href='Gallery.html?cat=" + i + "' class='dropdown-item text-right font-weight-bold'><i class='" + Categories[i].icon + "'></i> &nbsp;&nbsp;" + Categories[i].name + "</a>" + cl);
 
         try {
-            catHome.insertAdjacentHTML('beforeend', "<div class='col text-center'><div  class='border border-primary hover p-3 my-2 rounded bg-light shadow-sm'><a class='text-decoration-none' href='Gallery.html?cat=" + i + "'> <i class='" + Categories[i].icon + " fa-7x'></i><hr /><h5 class=' font-weight-bold' style='overflow: hidden; white-space: nowrap;height: 36px; direction: rtl' >" + Categories[i].name + "</h5></a> </div></div>");
+            catHome.insertAdjacentHTML('beforeend', "<div class='col text-center'><div  class='border border-primary hover my-2 rounded bg-light shadow-sm'><a class='text-decoration-none d-inline-block p-3 w-100' href='Gallery.html?cat=" + i + "'> <i class='" + Categories[i].icon + " fa-7x'></i><hr /><h5 class=' font-weight-bold' style='overflow: hidden; white-space: nowrap;height: 36px; direction: rtl' >" + Categories[i].name + "</h5></a> </div></div>");
         } catch (e) {
 
         }
