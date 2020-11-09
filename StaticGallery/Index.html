@@ -31,18 +31,14 @@
     <meta property="og:description" content="">
     <meta property="og:image" content="">
 
-
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
-    <link rel="manifest" href="Gipsy.json" >
 
-
+    <link rel="manifest" href="manifest.json">
 
 
     <style>
@@ -134,6 +130,66 @@
 
 </head>
 <body class="">
+    <script type="module">
+
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+
+    </script>
+    <script type="module">
+
+        // This is the "Offline page" service worker
+
+        importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+
+        const CACHE = "pwabuilder-page";
+
+        // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
+        const offlineFallbackPage = "Gipsy.html";
+
+        self.addEventListener("message", (event) => {
+            if (event.data && event.data.type === "SKIP_WAITING") {
+                self.skipWaiting();
+            }
+        });
+
+        self.addEventListener('install', async (event) => {
+            event.waitUntil(
+                caches.open(CACHE)
+                    .then((cache) => cache.add(offlineFallbackPage))
+            );
+        });
+
+        if (workbox.navigationPreload.isSupported()) {
+            workbox.navigationPreload.enable();
+        }
+
+        self.addEventListener('fetch', (event) => {
+            if (event.request.mode === 'navigate') {
+                event.respondWith((async () => {
+                    try {
+                        const preloadResp = await event.preloadResponse;
+
+                        if (preloadResp) {
+                            return preloadResp;
+                        }
+
+                        const networkResp = await fetch(event.request);
+                        return networkResp;
+                    } catch (error) {
+
+                        const cache = await caches.open(CACHE);
+                        const cachedResp = await cache.match(offlineFallbackPage);
+                        return cachedResp;
+                    }
+                })());
+            }
+        });
+
+
+    </script>
 
 
     <header id="MasterPageHeader">
@@ -189,7 +245,7 @@
                 <div class=" text-center">
                     <h1 class="font-weight-bold">شاهد جميع منتاجتنا و اختر ما يناسبك</h1>
 
-                    <a href="Gallery.html"  class="btn mt-3 btn-primary btn-lg p-4 font-weight-bold  hover animated fadeInUp">
+                    <a href="Gallery.html" class="btn mt-3 btn-primary btn-lg p-4 font-weight-bold  hover animated fadeInUp">
                         <i class="fas fa-gem"></i> عرض جميع المنتجات
                     </a>
 
@@ -318,7 +374,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="LoadMasterPage.js?version=20201107"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
@@ -359,5 +415,6 @@
          logged_out_greeting="أهلا و سهلا! قولنا شغال فى ايه و احنا هنوفرلك البرنامج المناسب لشغلك">
     </div>-->
 
+    <script src="assets/manup.min.js"></script>
 </body>
 </html>
