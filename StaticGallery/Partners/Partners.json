@@ -1,10 +1,5 @@
 ﻿[
   {
-    "name": "الفوى",
-    "image": "Partners/images/fawy.jpg",
-    "link": "https://www.facebook.com/%D8%A7%D9%84%D9%81%D9%88%D9%8A-%D9%84%D9%84%D8%B4%D9%86%D8%B7-105317127984029"
-  },
-  {
     "name": "Fabrics Shop",
     "image": "Partners/images/fab.jpg",
     "link": "https://www.facebook.com/Fabrics-shop-1503368516604301"
@@ -45,6 +40,11 @@
     "link": "https://www.facebook.com/MeatPointKB"
   },
   {
+    "name": "Malek",
+    "image": "Partners/images/malek.png",
+    "link": "https://www.facebook.com/malekfastfood"
+  },
+  {
     "name": "Mexicano",
     "image": "Partners/images/mex.png",
     "link": "https://www.facebook.com/MexicanoEgypt"
@@ -68,6 +68,11 @@
     "name": "تاج المشويات",
     "image": "Partners/images/tag.png",
     "link": "https://www.facebook.com/Tag.ELMashwait"
+  },
+  {
+    "name": "الفوى",
+    "image": "Partners/images/fawy.jpg",
+    "link": "https://www.facebook.com/%D8%A7%D9%84%D9%81%D9%88%D9%8A-%D9%84%D9%84%D8%B4%D9%86%D8%B7-105317127984029"
   },
   {
     "name": "الراعى",
