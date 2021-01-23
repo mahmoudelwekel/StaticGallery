@@ -78,11 +78,18 @@
     "name": "الراعى",
     "image": "Partners/images/ra.jpg",
     "link": ""
-  },  {
+  },
+  {
     "name": "المصطفى",
     "image": "Partners/images/mostafa.jpg",
     "link": ""
-  },  {
+  },
+  {
+    "name": "الصعيدي",
+    "image": "Partners/images/saidy.jpg",
+    "link": ""
+  },  
+  {
     "name": "التوفيق",
     "image": "Partners/images/tawfek.jpg",
     "link": ""
