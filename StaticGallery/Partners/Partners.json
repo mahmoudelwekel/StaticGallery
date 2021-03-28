@@ -35,6 +35,43 @@
     "link": "https://www.facebook.com/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D8%A8%D8%A7%D8%B1%D9%83-1539018672822198"
   },
   {
+    "name": "سيف الفارس",
+    "image": "Partners/images/seif.jpg",
+    "link": ""
+  },
+  {
+    "name": "الفوى",
+    "image": "Partners/images/fawy.jpg",
+    "link": "https://www.facebook.com/%D8%A7%D9%84%D9%81%D9%88%D9%8A-%D9%84%D9%84%D8%B4%D9%86%D8%B7-105317127984029"
+  },
+  {
+    "name": "المصطفى",
+    "image": "Partners/images/mostafa.jpg",
+    "link": ""
+  },
+  {
+    "name": "الصعيدي",
+    "image": "Partners/images/saidy.jpg",
+    "link": ""
+  },
+  {
+    "name": "التوفيق",
+    "image": "Partners/images/tawfek.jpg",
+    "link": "https://www.facebook.com/eltawfik1930/"
+  },
+  {
+    "name": "Zidan",
+    "image": "Partners/images/Zidan.png",
+    "link": "https://www.facebook.com/%D9%85%D8%A7%D8%B1%D9%83%D8%AA-%D8%B2%D9%8A%D8%AF%D8%A7%D9%86-Zidan-Market-106953418150591"
+  },
+  {
+    "name": "Hi-Barista",
+    "image": "Partners/images/barista.jpg",
+    "link": "https://www.facebook.com/mr.mohamed.elgaly/"
+  },
+
+
+  {
     "name": "مايونيز",
     "image": "Partners/images/maio.jpg",
     "link": "https://www.facebook.com/mayonnaise.egy"
@@ -80,29 +117,9 @@
     "link": "https://www.facebook.com/3m-Mr3y-%D8%B9%D9%85-%D9%85%D8%B1%D8%B9%D9%8A-1262461890564595/"
   },
   {
-    "name": "الفوى",
-    "image": "Partners/images/fawy.jpg",
-    "link": "https://www.facebook.com/%D8%A7%D9%84%D9%81%D9%88%D9%8A-%D9%84%D9%84%D8%B4%D9%86%D8%B7-105317127984029"
-  },
-  {
     "name": "الراعى",
     "image": "Partners/images/ra.jpg",
     "link": ""
-  },
-  {
-    "name": "المصطفى",
-    "image": "Partners/images/mostafa.jpg",
-    "link": ""
-  },
-  {
-    "name": "الصعيدي",
-    "image": "Partners/images/saidy.jpg",
-    "link": ""
-  },
-  {
-    "name": "التوفيق",
-    "image": "Partners/images/tawfek.jpg",
-    "link": "https://www.facebook.com/eltawfik1930/"
   },
   {
     "name": "Actros",
@@ -112,11 +129,6 @@
   {
     "name": "سنتر حنين",
     "image": "Partners/images/hanen.jpg",
-    "link": ""
-  },
-  {
-    "name": "سيف الفارس",
-    "image": "Partners/images/seif.jpg",
     "link": ""
   }
 ]
