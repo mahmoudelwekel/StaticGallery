@@ -7,7 +7,7 @@
 
         var item = { name: Name, quantity: Quantity };
 
-        localStorage.setItem("gipsy "+Name, JSON.stringify(item));
+        localStorage.setItem("gipsyProduct "+Name, JSON.stringify(item));
         
         fillTable();
 
@@ -31,7 +31,7 @@ function fillTable() {
     var len = 0;
 
     for (var i in  localStorage) {
-        if (localStorage.hasOwnProperty(i) && i.includes("gipsy")) {
+        if (localStorage.hasOwnProperty(i) && i.includes("gipsyProduct")) {
         var pro = JSON.parse(localStorage.getItem(i));
 
             $("#cartTable tbody").append("<tr><td>" + pro.name + "</td> <td>" + pro.quantity + "</td><td><button class='btn btn-danger btn-block btn-sm' name='" + i + "' onclick='removeItem(this)'><i class='fas fa-times'></i></button></td> </tr>");
@@ -59,7 +59,7 @@ function sendOrder() {
     var msg = "";
 
     for (var i in localStorage) {
-        if (localStorage.hasOwnProperty(i) && i.includes("gipsy")) {
+        if (localStorage.hasOwnProperty(i) && i.includes("gipsyProduct")) {
             var pro = JSON.parse(localStorage.getItem(i));
 
             msg = msg + "[ " + pro.quantity + " : " + pro.name + " ]%0A"
