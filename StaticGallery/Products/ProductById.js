@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     var d = new Date();
-    var nocach = '20201107';
+    var nocach = '20210402';
 
     $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
         var infolist = json;
@@ -29,13 +29,13 @@
                 details.insertAdjacentHTML('beforeend', prolist[i].description);
                 price.insertAdjacentHTML('beforeend', prolist[i].price);
                 privacy.insertAdjacentHTML('beforeend', Categories[prolist[i].category].description + "<a class='h6 font-weight-bold text-info ' href='Gallery.html?cat=" + prolist[i].category + "'>المزيد عن قسم " + Categories[prolist[i].category].name + "</a>");
-                order.insertAdjacentHTML('beforeend', "<a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success btn-lg font-weight-bold w-100' target='_blank'><i class='fas fa-phone'></i> اطلب الأن</a>");
+                order.insertAdjacentHTML('beforeend', "<div class=' btn-group w-100 '> <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success py-2 w-50 font-weight-bold ' target='_blank'><i class='fas fa-bolt'></i> اطلب الأن</a> <button name='" + prolist[i].name + "' class='btn btn-primary font-weight-bold addToCart py-2 w-50'><i class='fas fa-cart-plus fa-lg'></i> اضافة للعربة</button> </div>");
 
 
-                slider.insertAdjacentHTML('beforeend', "<div class='carousel-item active' data-interval='2000'><img src='" + imagelist[0] + "' class='d-block w-100 fullimg'style='height: 325px; object-fit: contain;' ></div>");
+                slider.insertAdjacentHTML('beforeend', "<div class='carousel-item active' data-interval='2000'><img src='" + imagelist[0] + "' class='d-block w-100 fullimg'style='height: 319px; object-fit: contain;' ></div>");
 
                 for (var i = 1; i < imagelist.length; i++) {
-                    slider.insertAdjacentHTML('beforeend', "<div class='carousel-item' data-interval='2000'><img src='" + imagelist[i] + "' class='d-block w-100 fullimg' style='height: 325px; object-fit: contain;' ></div>");
+                    slider.insertAdjacentHTML('beforeend', "<div class='carousel-item' data-interval='2000'><img src='" + imagelist[i] + "' class='d-block w-100 fullimg' style='height: 319px; object-fit: contain;' ></div>");
                 }
 
                 $(".fullimg").click(function () {
@@ -43,6 +43,8 @@
 
                     $('#exampleModal').modal('show');
                 });
+
+                addToCart();
 
             });
 

@@ -1,11 +1,11 @@
 ﻿var d = new Date();
 
-$.get('header.txt?v=20201107', function (data) {
+$.get('header.html?v=20210402', function (data) {
     document.getElementById("MasterPageHeader").insertAdjacentHTML('beforeend', data);
 
 }, 'text');
 
-$.get('footer.txt?v=20201107', function (data) {
+$.get('footer.html?v=20210402', function (data) {
     document.getElementById("MasterPageFooter").insertAdjacentHTML('beforeend', data);
 
 }, 'text');

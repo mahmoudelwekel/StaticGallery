@@ -1,0 +1,111 @@
+﻿
+<div style="position: relative; border-top: 2px solid #0094ff; opacity: .75;" class="text-dark font-weight-bold bg-light " id="message">
+    <div class="container">
+        <div class="row ">
+
+            <div class="col-md-8 text-right py-5" id="placeinfo">
+                <h4 class="font-weight-bold" id="placename"></h4>
+                <hr />
+            </div>
+
+
+            <div class="col-md-4 text-right py-5">
+                <h4 class="font-weight-bold">اتصل بنا</h4>
+                <hr />
+                <a href="#" id="call" target="_blank" class="text-decoration-none">
+                    <i class="fas fa-phone-square fa-3x"
+                       style="color: darkslategrey;"></i>
+                </a>
+                <a href="#" id="whats" target="_blank" class="text-decoration-none">
+                    <i class="fab fa-whatsapp-square fa-3x"
+                       style="color: #25D366;"></i>
+                </a>
+                <a href="#" id="face" target="_blank" class="text-decoration-none">
+                    <i class="fab fa-facebook-square fa-3x"
+                       style="color: #3b5998;"></i>
+                </a>
+                <a href="#" id="messenger" target="_blank" class="text-decoration-none">
+                    <i class="fab fa-facebook-messenger fa-3x"
+                       style="color: #00C6FF;"></i>
+                </a>
+                <a href="#" id="insta" target="_blank" class="text-decoration-none">
+                    <i class="fab fa-instagram-square fa-3x"
+                       style="color: #3f729b ;"></i>
+                </a>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="text-center text-light p-3" style="background-color: #27498C;">
+    <a href="https://fb.com/Gipsy.EG" target="_blank" class="font-weight-bold text-decoration-none text-light">Powered by Gipsy</a>
+</div>
+
+<!-- Button trigger modal -->
+<a href="" class="fa-layers  fa-2x  bg-primary rounded-circle shadow text-light border" style="padding:30px; position:fixed; bottom:24px;left:24px;z-index:999999999" data-toggle="modal" data-target="#exampleModal">
+    <i class="fas fa-shopping-cart "></i>
+    <span class="fa-layers-counter fa-2x" id="counter" style="background:Tomato!important"></span>
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold" id="exampleModalLabel">
+                    عربة التسوق
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive text-right" dir="rtl">
+
+                    <table id="cartTable" class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">المنتج</th>
+                                <th scope="col">الكمية</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <div class=' btn-group w-100'>
+                    <button type="button" class="btn btn-outline-danger w-50  font-weight-bold" onclick="localStorage.clear();fillTable();" data-dismiss="modal">إلغاء</button>
+                    <button type="button" onclick="sendOrder()" class="btn btn-outline-success w-50  font-weight-bold">تأكيد</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="102399994644524"
+     theme_color="#007bff"
+     logged_in_greeting="أهلا و سهلا! قولنا شغال فى ايه و احنا هنوفرلك البرنامج المناسب لشغلك"
+     logged_out_greeting="أهلا و سهلا! قولنا شغال فى ايه و احنا هنوفرلك البرنامج المناسب لشغلك">
+</div>
+
+
+
+
