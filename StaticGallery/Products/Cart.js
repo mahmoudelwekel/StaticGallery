@@ -6,8 +6,9 @@
         var Name = $(this).attr("name");
 
         var item = { name: Name, quantity: Quantity };
-
-        localStorage.setItem("gipsyProduct "+Name, JSON.stringify(item));
+        if (Quantity != null) {
+            localStorage.setItem("gipsyProduct " + Name, JSON.stringify(item));
+        }
         
         fillTable();
 

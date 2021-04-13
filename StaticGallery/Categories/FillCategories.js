@@ -4,7 +4,7 @@
 
 $(document).ready(function () {
     var d = new Date();
-    var nocach = '20210402';
+    var nocach = '202104122';
     
 $.getJSON('Categories/Categories.json?nocache=' + nocach, function (json) {
     var catnav = document.getElementById('catBtns');

@@ -2,7 +2,7 @@
 
     var d = new Date();
     //var nocach = d.getFullYear() + d.getMonth() + d.getDay() + d.getHours() + d.getMinutes();
-    var nocach = '20210402';
+    var nocach = '202104122';
 
     $.getJSON('Partners/Partners.json?nocache=' + nocach, function (json) {
     var Partnerslist = json;

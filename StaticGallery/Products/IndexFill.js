@@ -3,7 +3,7 @@
     var div = document.getElementById('pageRow');
 
     var d = new Date();
-    var nocach = '20210402';
+    var nocach = '202104122';
 
 $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
     var infolist = json;
@@ -36,14 +36,14 @@ $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
             var searchVal = cat;
             for (var i = 0 ; i < prolist.length ; i++) {
                 if (prolist[i][searchField] == searchVal) {
-                    div.insertAdjacentHTML('beforeend', "<div class='col-md-3 pageelement py-3'> <div class='card hover border-primary '> <img class='img-fluid card-img-top categoryslider-img ' src='" + prolist[i].image[0] + "' alt='' style='height: 220px; object-fit: cover;' /> <div class='card-body w-100 text-primary categoryslider-body' style='position: absolute; top: 49px; background-color: black; display: none; opacity: .95; overflow-y: scroll; max-height: 100%;'> </div> <div class='card-footer '> <div class=' font-weight-bold ' style='overflow: hidden; white-space: nowrap; direction: rtl'><a href='Product.html?i=" + i + "'>" + prolist[i].name + "</a></div> </div> <div class='card-footer btn-group w-100 btn-group-sm p-0 rounded-0 rounded-bottom'> <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success font-weight-bold py-2 rounded-0 rounded-bottom' target='_blank'><i class='fas fa-bolt fa-lg'></i></a> <button name='" + prolist[i].name + "' class='btn btn-primary font-weight-bold py-2 addToCart rounded-0 rounded-bottom'><i class='fas fa-cart-plus fa-lg'></i></button> </div> </div> </div>")
+                    div.insertAdjacentHTML('beforeend', "<div class='col-md-3 pageelement py-3'>                        <div class= 'card hover border-primary ' >                        <img class='img-fluid card-img-top categoryslider-img ' src='" + prolist[i].image[0] + "' alt='' style='height: 300px; object-fit: cover;' />                        <div class='card-img-overlay text-primary  p-0 mw-100' style='overflow:hidden'>                            <div class=' categoryslider-body' style='display:none'>                                <div class='d-flex justify-content-between p-3 '>                                    <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success rounded-circle shadow ic' target='_blank'><i class='fas fa-bolt '></i></a>                                    <button name='" + prolist[i].name + "' class='btn btn-primary   addToCart rounded-circle shadow ic'><i class='fas fa-cart-plus '></i></button>                                </div>                            </div>                            <div class='pb-4 w-100 px-3' style='position: absolute; bottom: 0 ;box-shadow:rgb(0 ,0, 0) 0px -15px 20px 20px;background-color:black;opacity:.70'>                                <div class=' font-weight-bold text-white' style='overflow: hidden; white-space: nowrap; direction: rtl'><a class=' text-white' href='Product.html?i=" + i + "'>" + prolist[i].name + "</a></div>                            </div>                        </div>                        </div >                    </div >")
                 }
             }
         }
         else {
             for (var i = 0; i < prolist.length; i++) {
                 try {
-                    div.insertAdjacentHTML('beforeend', "<div class='col-md-3 pageelement py-3'> <div class='card hover border-primary '> <img class='img-fluid card-img-top categoryslider-img ' src='" + prolist[i].image[0] + "' alt='' style='height: 220px; object-fit: cover;' /> <div class='card-body w-100 text-primary categoryslider-body' style='position: absolute; top: 49px; background-color: black; display: none; opacity: .95; overflow-y: scroll; max-height: 100%;'> </div> <div class='card-footer '> <div class=' font-weight-bold ' style='overflow: hidden; white-space: nowrap; direction: rtl'><a href='Product.html?i=" + i + "'>" + prolist[i].name + "</a></div> </div> <div class='card-footer btn-group w-100 btn-group-sm p-0 rounded-0 rounded-bottom'> <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success font-weight-bold py-2 rounded-0 rounded-bottom' target='_blank'><i class='fas fa-bolt fa-lg'></i></a> <button name='" + prolist[i].name + "' class='btn btn-primary font-weight-bold py-2 addToCart rounded-0 rounded-bottom'><i class='fas fa-cart-plus fa-lg'></i></button> </div> </div> </div>")
+                    div.insertAdjacentHTML('beforeend', "<div class='col-md-3 pageelement py-3'>                        <div class= 'card hover border-primary ' >                        <img class='img-fluid card-img-top categoryslider-img ' src='" + prolist[i].image[0] + "' alt='' style='height: 300px; object-fit: cover;' />                        <div class='card-img-overlay text-primary  p-0 mw-100' style='overflow:hidden'>                            <div class=' categoryslider-body' style='display:none'>                                <div class='d-flex justify-content-between p-3 '>                                    <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success rounded-circle shadow ic' target='_blank'><i class='fas fa-bolt '></i></a>                                    <button name='" + prolist[i].name + "' class='btn btn-primary   addToCart rounded-circle shadow ic'><i class='fas fa-cart-plus '></i></button>                                </div>                            </div>                            <div class='pb-4 w-100 px-3' style='position: absolute; bottom: 0 ;box-shadow:rgb(0 ,0, 0) 0px -15px 20px 20px;background-color:black;opacity:.70'>                                <div class=' font-weight-bold text-white' style='overflow: hidden; white-space: nowrap; direction: rtl'><a class=' text-white' href='Product.html?i=" + i + "'>" + prolist[i].name + "</a></div>                            </div>                        </div>                        </div >                    </div >")
                 } catch (e) {
 
                 }
@@ -51,6 +51,16 @@ $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
         }
 
         addToCart();
+
+
+        $(".card").hover(function (event) {
+            //$(".categoryslider-body", this).css("height", $(".categoryslider-img", this).height());
+            $(".categoryslider-body", this).fadeIn();
+        });
+
+        $(".card").mouseleave(function (event) {
+            $(".categoryslider-body", this).fadeOut();
+        });
 
         //$(".card").hover(function (event)
         //{
