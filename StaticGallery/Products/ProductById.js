@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     var d = new Date();
-    var nocach = '202104122';
+    var nocach = '20210415';
 
     $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
         var infolist = json;

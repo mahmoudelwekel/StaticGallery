@@ -133,15 +133,13 @@
                         <div class='card hover border-primary '>
                             <img class='img-fluid card-img-top categoryslider-img ' src='" + prolist[i].image[0] + "' alt='' style='height: 300px; object-fit: cover;' />
                             <div class='card-img-overlay text-primary  p-0 mw-100' style='overflow:hidden'>
-                                <div class=' categoryslider-body' style='display:none'>
-                                    <div class='d-flex justify-content-between p-3 '>
-                                        <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success rounded-circle shadow ic' target='_blank'><i class='fas fa-bolt '></i></a>
+                                <div class=' categoryslider-body p-3 text-left' style='display:none'>
+                                        <a href='Product.html?i=" + i + "' class='btn btn-info rounded-circle shadow ic' ><i class='fas fa-info '></i></a>
+                                        <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success rounded-circle shadow ic mx-2' target='_blank'><i class='fas fa-bolt '></i></a>
                                         <button name='" + prolist[i].name + "' class='btn btn-primary   addToCart rounded-circle shadow ic'><i class='fas fa-cart-plus '></i></button>
-                                    </div>
-
                                 </div>
-                                <div class='pb-4 w-100 px-3' style='position: absolute; bottom: 0 ;box-shadow:rgb(0 ,0, 0) 0px -25px 20px 20px;background-color:black;opacity:.80'>
-                                    <div class=' font-weight-bold ' style='overflow: hidden; white-space: nowrap; direction: rtl'><a href='Product.html?i=" + i + "'>"+ prolist[i].name + "</a></div>
+                                <div class='pb-4 w-100 px-3' style='position: absolute; bottom: 0 ;box-shadow:rgb(0 ,0, 0) 0px -10px 100px 125px;background-color:black;opacity:.70'>
+                                    <div class=' font-weight-bold ' style='overflow: hidden; white-space: nowrap; direction: rtl'><a class='text-white' href='Product.html?i=" + i + "'>"+ prolist[i].name + "</a></div>
                                 </div>
 
                             </div>
@@ -168,7 +166,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="LoadMasterPage.js?version=202104122"></script>
+    <script src="LoadMasterPage.js?version=20210415"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha256-x3YZWtRjM8bJqf48dFAv/qmgL68SI4jqNWeSLMZaMGA=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
@@ -180,10 +178,10 @@
 
     <script src="assets/jquery.paginate.js"></script>
 
-    <script src="Info/FillInfo.js?version=202104122"></script>
-    <script src="Categories/FillCategories.js?version=202104122"></script>
-    <script src="Products/IndexFill.js?version=202104122"></script>
-    <script src="Products/indexSearch.js?version=202104122"></script>
+    <script src="Info/FillInfo.js?version=20210415"></script>
+    <script src="Categories/FillCategories.js?version=20210415"></script>
+    <script src="Products/IndexFill.js?version=20210415"></script>
+    <script src="Products/indexSearch.js?version=20210415"></script>
 
     <script src="Products/Cart.js"></script>
 
