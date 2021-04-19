@@ -157,9 +157,16 @@
   {
     "name": "Grand Cafe - جراند كافيه",
     "mac": "Vuknvl++pjvV3lxk0cHl15V2Zq9fQ/z7xSNmIToHAfg=",
-    "end": "05/05/2020",
+    "end": "01/01/2021",
     "org": "DESKTOP-M7Q5VUA",
     "comment": "Hippo Trail unknown uptop"
+  },
+  {
+    "name": "unknown store",
+    "mac": "5huGiQZW2WQEhZrE5El4rpEO/XhcBIvWIDRd5Qg1ujo=",
+    "end": "01/01/2021",
+    "org": "DESKTOP-M86JF2I HOLOOL.TK",
+    "comment": "store Trail unknown uptop"
   }
 
 ]
