@@ -13,7 +13,7 @@ function getParameterByName(name, url) {
 
 $(document).ready(function () {
     var d = new Date();
-    var nocach = '20210415';
+    var nocach = '20211005';
 
 $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
     var infolist  = json;

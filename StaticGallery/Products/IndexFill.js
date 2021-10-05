@@ -3,7 +3,7 @@
     var div = document.getElementById('pageRow');
 
     var d = new Date();
-    var nocach = '20210415';
+    var nocach = '20211005';
 
 $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
     var infolist = json;
@@ -36,15 +36,53 @@ $.getJSON('Info/Info.json?nocache=' + nocach, function (json) {
             var searchVal = cat;
             for (var i = 0 ; i < prolist.length ; i++) {
                 if (prolist[i][searchField] == searchVal) {
-                    div.insertAdjacentHTML('beforeend', "<div class='col-md-3 pageelement py-3'> <div class='card hover border-primary '> <img class='img-fluid card-img-top categoryslider-img ' src='" + prolist[i].image[0] + "' alt='' style='height: 300px; object-fit: cover;' /> <div class='card-img-overlay text-primary p-0 mw-100' style='overflow:hidden'> <div class=' categoryslider-body p-3 text-left' style='display:none'> <a href='Product.html?i=" + i + "' class='btn btn-info rounded-circle shadow ic' ><i class='fas fa-info '></i></a> <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success rounded-circle shadow ic mx-2' target='_blank'><i class='fas fa-bolt '></i></a> <button name='" + prolist[i].name + "' class='btn btn-primary addToCart rounded-circle shadow ic'><i class='fas fa-cart-plus '></i></button> </div> <div class='pb-4 w-100 px-3' style='position: absolute; bottom: 0 ;box-shadow:rgb(0 ,0, 0) 0px -10px 100px 125px;background-color:black;opacity:.70'> <div class=' font-weight-bold ' style='overflow: hidden; white-space: nowrap; direction: rtl'><a class='text-white' href='Product.html?i=" + i + "'>" + prolist[i].name + "</a></div> </div> </div> </div> </div>")
+                    div.insertAdjacentHTML('beforeend',
+                        "    <div class='col py-3 pageelement filterElement' name='" + prolist[i].name.toLowerCase() + "'>                                                                                                                      " +
+                        "        <div class='card hover border shadow-sm '>                                                                                                                         " +
+                        "            <img class='card-img-top categoryslider-img rounded-top ' src='" + prolist[i].image[0] + "' alt='' style='height: 200px; object-fit: cover;' />              " +
+                        "            <div class='card-body text-primary  categoryslider-body w-100' style='display:none;position:absolute;top:125px'>                                               " +
+                        "                <button name='" + prolist[i].name + "' class='btn btn-primary   addToCart rounded-circle shadow ic'><i class='fas fa-cart-plus '></i></button>                                    " +
+                        "                <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success rounded-circle shadow ic mx-2' target='_blank'><i class='fas fa-bolt '></i></a>                                         " +
+                        "                <a href='Product.html?i=" + i + "' class='btn btn-secondary text-white rounded-circle shadow ic'><i class='fas fa-info '></i></a>                                                 " +
+                        "            </div>                                                                                                                                                         " +
+                        "            <div class='card-body text-right'>                                                                                                                             " +
+                        "                <h6 class='card-title font-weight-bold no-text-wrap'>                                                                                                      " +
+                        "                    <a class=' text-decoration-none d-block' href='Product.html?i=" + i + "' title='Name'>" + prolist[i].name + "</a>                                                           " +
+                        "                </h6>                                                                                                                                                      " +
+                        "                <p class='card-text '>                                                                                                                                  " +
+                        "<strong>" + prolist[i].price + "</strong>                                                                                                                     " +
+                        "                </p>                                                                                                                                                       " +
+                        "            </div>                                                                                                                                                         " +
+                        "        </div>                                                                                                                                                             " +
+                        "    </div>                                                                                                                                                                 "
+                    );
                 }
             }
         }
         else {
             for (var i = 0; i < prolist.length; i++) {
                 try {
-                    div.insertAdjacentHTML('beforeend', "<div class='col-md-3 pageelement py-3'> <div class='card hover border-primary '> <img class='img-fluid card-img-top categoryslider-img ' src='" + prolist[i].image[0] + "' alt='' style='height: 300px; object-fit: cover;' /> <div class='card-img-overlay text-primary p-0 mw-100' style='overflow:hidden'> <div class=' categoryslider-body p-3 text-left' style='display:none'> <a href='Product.html?i=" + i + "' class='btn btn-info rounded-circle shadow ic' ><i class='fas fa-info '></i></a> <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success rounded-circle shadow ic mx-2' target='_blank'><i class='fas fa-bolt '></i></a> <button name='" + prolist[i].name + "' class='btn btn-primary addToCart rounded-circle shadow ic'><i class='fas fa-cart-plus '></i></button> </div> <div class='pb-4 w-100 px-3' style='position: absolute; bottom: 0 ;box-shadow:rgb(0 ,0, 0) 0px -10px 100px 125px;background-color:black;opacity:.70'> <div class=' font-weight-bold ' style='overflow: hidden; white-space: nowrap; direction: rtl'><a class='text-white' href='Product.html?i=" + i + "'>" + prolist[i].name + "</a></div> </div> </div> </div> </div>")
-                } catch (e) {
+                    div.insertAdjacentHTML('beforeend',
+                        "    <div class='col py-3 pageelement filterElement' name='" + prolist[i].name.toLowerCase() + "'>                                                                                                                      " +
+                        "        <div class='card hover border shadow-sm '>                                                                                                                         " +
+                        "            <img class='card-img-top categoryslider-img rounded-top ' src='" + prolist[i].image[0] + "' alt='' style='height: 200px; object-fit: cover;' />              " +
+                        "            <div class='card-body text-primary  categoryslider-body w-100' style='display:none;position:absolute;top:125px'>                                               " +
+                        "                <button name='" + prolist[i].name + "' class='btn btn-primary   addToCart rounded-circle shadow ic'><i class='fas fa-cart-plus '></i></button>                                    " +
+                        "                <a href='https://wa.me/2" + infolist[0].phone + "?text=" + prolist[i].name + "' class='btn btn-success rounded-circle shadow ic mx-2' target='_blank'><i class='fas fa-bolt '></i></a>                                         " +
+                        "                <a href='Product.html?i=" + i + "' class='btn btn-secondary text-white rounded-circle shadow ic'><i class='fas fa-info '></i></a>                                                 " +
+                        "            </div>                                                                                                                                                         " +
+                        "            <div class='card-body text-right'>                                                                                                                             " +
+                        "                <h6 class='card-title font-weight-bold no-text-wrap'>                                                                                                      " +
+                        "                    <a class=' text-decoration-none d-block' href='Product.html?i=" + i + "' title='Name'>" + prolist[i].name + "</a>                                                           " +
+                        "                </h6>                                                                                                                                                      " +
+                        "                <p class='card-text '>                                                                                                                                  " +
+                        "<strong>" + prolist[i].price + "</strong>                                                                                                                     " +
+                        "                </p>                                                                                                                                                       " +
+                        "            </div>                                                                                                                                                         " +
+                        "        </div>                                                                                                                                                             " +
+                        "    </div>                                                                                                                                                                 "
+                    );
+                        } catch (e) {
 
                 }
             }
