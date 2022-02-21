@@ -56,6 +56,13 @@
     "comment": "Store"
   },
   {
+    "name": "تبارك",
+    "mac": "8MKuJZVgYAMWNKB4xum6rQzYR+GYtkONvJrP4WUMczU=",
+    "end": "07/08/2030",
+    "org": "Gipsy",
+    "comment": "ELMSRIA-PC Tree"
+  },
+  {
     "name": "El/mohands Air Conditions",
     "mac": "ZyFdWrcG0dt9eYlGERg+lf0v6nVHERlOcT8APh3szzc=",
     "end": "07/08/2030",
@@ -264,7 +271,21 @@
     "mac": "qPHRRK3xE2kA6TSYY77O5bglTWUtmvtZkjVnSWPJjJw=",
     "end": "12/12/2025",
     "org": "ELHUDA-PC",
-    "comment": "Hippo Trail uptop"
+    "comment": "Hippo Trail uptop جهاز تبع احمد امام"
+  },
+  {
+    "name": "MEXICANO",
+    "mac": "tBxscCLiNJf95KXYVvCeBAg9wEJ7X5ygMjom6j0QupY=",
+    "end": "12/12/2035",
+    "org": "MEXICANO-PC",
+    "comment": "Hippo UPTOP"
+  },
+  {
+    "name": "Flavor",
+    "mac": "OTLiYruwh1DUy0NFvuR4+ei9IqpZ4z74IHfkFMayCoY=",
+    "end": "12/12/2021",
+    "org": "UPTOP-PC",
+    "comment": "Hippo UPTOP"
   },
   {
     "name": "unknown store",
@@ -275,10 +296,24 @@
   },
   {
     "name": "unknown store",
+    "mac": "tGMYTrVnFO1HW0SRZaostnGTdwmOXGy2zaboczdn4Gs=",
+    "end": "01/01/2021",
+    "org": "UPTOP",
+    "comment": "store Trail unknown uptop"
+  },
+  {
+    "name": "unknown store",
     "mac": "JOGyP8IzKU2q/dVx6YAAkL2SO8uon7sMtJFA8dznhP4=",
     "end": "01/01/2021",
     "org": "DESKTOP-KOML32P COMPU JO!O",
     "comment": "store Trail unknown uptop"
+  },
+  {
+    "name": "unknown store",
+    "mac": "0B6rzkX+RP3dHP+NuX4dRXUoykJIixgo83ax4VBjRVM=",
+    "end": "07/08/2021",
+    "org": "Hany",
+    "comment": "Uptop store"
   },
   {
     "name": "unknown store",
