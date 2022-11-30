@@ -5,4 +5,8 @@
 <VisualWebDeveloper>
 
   <iisExpressSettings sslPort="44367" windowsAuthentication="disabled" anonymousAuthentication="enabled" useClassicPipelineMode="false"/>
+
+  <Globals>
+    <UserProperties licenses_4licenses_1json__JsonSchema="https://carafe.fm/schema/draft-02/bundle.schema.json"/>
+  </Globals>
 </VisualWebDeveloper>
