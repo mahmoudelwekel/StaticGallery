@@ -173,5 +173,35 @@
     "name": "بيت الفلافل",
     "image": "Partners/images/BaitElfalafl.jpg",
     "link": "https://www.facebook.com/profile.php?id=100086585816650"
+  },
+  {
+    "name": "البرج ستيل",
+    "image": "Partners/images/elborgsteel.png",
+    "link": "https://www.elborgsteel.com/"
+  },
+  {
+    "name": "الإخلاص",
+    "image": "Partners/images/ElEkhlas.png",
+    "link": "#"
+  },
+  {
+    "name": "Pesto Pasta",
+    "image": "Partners/images/Pesto.jpg",
+    "link": "https://www.facebook.com/Pesto-fast-food-111077048482571/"
+  },
+  {
+    "name": "3S Sports",
+    "image": "Partners/images/3S.jpg",
+    "link": "https://www.facebook.com/groups/211653102319822"
+  },
+  {
+    "name": "Andria Cafe",
+    "image": "Partners/images/Andria.jpg",
+    "link": "https://www.facebook.com/AndriaCafe/"
+  },
+  {
+    "name": "مستر كريباوى",
+    "image": "Partners/images/Krebawy.jpg",
+    "link": "https://www.facebook.com/Mr.Krebawyi"
   }
 ]
