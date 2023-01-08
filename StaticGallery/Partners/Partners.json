@@ -208,5 +208,10 @@
     "name": "مطعم الشرقاوى",
     "image": "Partners/images/alsharkawykfs.jpg",
     "link": "https://www.facebook.com/alsharkawykfs/"
+  },
+  {
+    "name": "مزاج",
+    "image": "Partners/images/mazag.png",
+    "link": "https://www.facebook.com/cafemazag1/"
   }
 ]
