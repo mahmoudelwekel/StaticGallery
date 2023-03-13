@@ -74,7 +74,7 @@
     "image": "Partners/images/top.jpg",
     "link": "https://www.facebook.com/top.man74/"
   },
-   {
+  {
     "name": "القمة",
     "image": "Partners/images/kema.jpg",
     "link": ""
@@ -145,25 +145,22 @@
     "name": "Torill",
     "image": "Partners/images/torill.jpeg",
     "link": "https://www.facebook.com/Torill-caf%C3%A8-102602578619030"
-  }
-  ,
+  },
   {
     "name": "Liver",
     "image": "Partners/images/liver.jpg",
     "link": "https://www.facebook.com/Liver.Tanta/"
-  }
-  ,
+  },
   {
     "name": "المذاق الطيب",
     "image": "Partners/images/elmazaq.jpg",
     "link": "https://www.facebook.com/Almazak.altayeb"
-  }
-  ,
+  },
   {
     "name": "همام - Hamam",
     "image": "Partners/images/hamam.jpg",
     "link": "https://www.facebook.com/HamamFastfood"
-  } ,
+  },
   {
     "name": "مركز إدراك",
     "image": "Partners/images/edrak.png",
