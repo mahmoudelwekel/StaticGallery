@@ -220,5 +220,15 @@
     "name": "POP!",
     "image": "Partners/images/pop.jpg",
     "link": "https://www.facebook.com/profile.php?id=100086608934037"
+  },
+  {
+    "name": "قصر المشويات",
+    "image": "Partners/images/KasrElmashwiat.jpg",
+    "link": "https://www.facebook.com/QasrAlmashwiat"
+  },
+  {
+    "name": "سى رمضان",
+    "image": "Partners/images/CeRamadan.jpg",
+    "link": "https://www.facebook.com/ce.ramadan.tent"
   }
 ]
