@@ -230,5 +230,25 @@
     "name": "سى رمضان",
     "image": "Partners/images/CeRamadan.jpg",
     "link": "https://www.facebook.com/ce.ramadan.tent"
+  },
+  {
+    "name": "واحة النخيل",
+    "image": "Partners/images/wa7etElna5el.jpg",
+    "link": "https://www.facebook.com/palm.oasis.alex"
+  },
+  {
+    "name": "RESTO",
+    "image": "Partners/images/resto.png",
+    "link": "https://www.facebook.com/profile.php?id=100091825579980"
+  },
+  {
+    "name": "TIMES",
+    "image": "Partners/images/times.jpg",
+    "link": "https://www.facebook.com/times.damanhor"
+  },
+  {
+    "name": "MANO",
+    "image": "Partners/images/mano.jpg",
+    "link": "https://www.facebook.com/ManosPizza21"
   }
 ]
