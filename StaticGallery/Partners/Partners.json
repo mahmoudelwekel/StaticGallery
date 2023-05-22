@@ -250,5 +250,10 @@
     "name": "MANO",
     "image": "Partners/images/mano.jpg",
     "link": "https://www.facebook.com/ManosPizza21"
+  },
+  {
+    "name": "الصاوى",
+    "image": "Partners/images/Elsawy.png",
+    "link": "https://www.facebook.com/profile.php?id=100054233660149"
   }
 ]
