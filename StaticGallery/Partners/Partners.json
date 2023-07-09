@@ -255,5 +255,25 @@
     "name": "الصاوى",
     "image": "Partners/images/Elsawy.png",
     "link": "https://www.facebook.com/profile.php?id=100054233660149"
+  },
+  {
+    "name": "الهنا",
+    "image": "Partners/images/hana.png",
+    "link": "#"
+  },
+  {
+    "name": "Doner",
+    "image": "Partners/images/Doner.jpg",
+    "link": "https://www.facebook.com/profile.php?id=100089247534414"
+  },
+  {
+    "name": "Drop",
+    "image": "Partners/images/Drop.jpg",
+    "link": "https://www.facebook.com/DROPfriedchicken"
+  },
+  {
+    "name": "Notato",
+    "image": "Partners/images/Notato.jpg",
+    "link": "https://www.facebook.com/profile.php?id=100087797844811"
   }
 ]
