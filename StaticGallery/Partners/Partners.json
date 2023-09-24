@@ -275,5 +275,20 @@
     "name": "Notato",
     "image": "Partners/images/Notato.jpg",
     "link": "https://www.facebook.com/profile.php?id=100087797844811"
+  },
+  {
+    "name": "مرحبتين ومرحبا",
+    "image": "Partners/images/marhabten.jpg",
+    "link": "https://www.facebook.com/profile.php?id=100095067560079"
+  },
+  {
+    "name": "EftkaSa-إفتكاسة",
+    "image": "Partners/images/Eftekasa.jpg",
+    "link": "https://www.facebook.com/profile.php?id=100095270065290"
+  },
+  {
+    "name": "GS-Capital",
+    "image": "Partners/images/GSCapital.png",
+    "link": "https://www.facebook.com/profile.php?id=61551131933655"
   }
 ]
