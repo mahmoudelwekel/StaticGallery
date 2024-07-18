@@ -290,5 +290,20 @@
     "name": "GS-Capital",
     "image": "Partners/images/GSCapital.png",
     "link": "https://www.facebook.com/profile.php?id=61551131933655"
+  },
+  {
+    "name": "Ganzorista",
+    "image": "Partners/images/Ganzorista.png",
+    "link": "https://www.facebook.com/profile.php?id=61557669443906"
+  },
+  {
+    "name": "مورق",
+    "image": "Partners/images/Mowaraq.jpg",
+    "link": "https://www.facebook.com/profile.php?id=61555909169597"
+  },
+  {
+    "name": "Greate Pizza",
+    "image": "Partners/images/GreatePizza.jpg",
+    "link": "https://www.facebook.com/greatpizza.eg"
   }
 ]
