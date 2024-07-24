@@ -69,7 +69,7 @@ function sendOrder() {
     }
 
     if (msg != "") {
-        window.open("https://wa.me/201097154297?text=" + msg);
+        window.open("https://wa.me/201559800666?text=" + msg);
         localStorage.clear();
         fillTable();
 
