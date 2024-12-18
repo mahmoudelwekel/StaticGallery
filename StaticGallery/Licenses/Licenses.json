@@ -306,6 +306,12 @@
     "comment": "Hippo kfs Elemam"
   },
   {
+    "name": "تاج المشويات",
+    "mac": "Z3tkcSRzZKrNepnPB/sSAjjvdaV4XWIYlxYeKQPEJxQ=",
+    "end": "01/01/2030",
+    "comment": "Hippo"
+  } ,
+  {
     "name": "Mazag",
     "mac": "jaZkaqj4HDhD2Drx350WtVcJGhDYrPn3qWElFIZd1jRsiNu1xyhnfFgKqAAguJvW",
     "end": "01/01/2025",
@@ -514,6 +520,11 @@
     "mac": "QDkQWIxZE50CE4tiTYhb6my7aF/2a8BS61KW8tRMvxY=",
     "end": "12/15/2024",
     "comment": "Hippo"
+  },
+  {
+    "name": "ابو بكر لاتاكيا",
+    "mac": "jaZkaqj4HDhD2Drx350WtVcJGhDYrPn3qWElFIZd1jS5jiaURFIpC0vn38I7t/+2",
+    "end": "01/15/2025",
+    "comment": "Hippo"
   } 
-
-]
+ ]
