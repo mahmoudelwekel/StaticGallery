@@ -305,5 +305,40 @@
     "name": "Greate Pizza",
     "image": "Partners/images/GreatePizza.jpg",
     "link": "https://www.facebook.com/greatpizza.eg"
+  },
+  {
+    "name": "Elite",
+    "image": "Partners/images/Elite.jpg",
+    "link": "https://www.facebook.com/Elitecafe.eg"
+  },
+  {
+    "name": "11:11",
+    "image": "Partners/images/1111.jpg",
+    "link": "https://www.facebook.com/p/1111-Coffee-61555538978781"
+  },
+  {
+    "name": "Malik",
+    "image": "Partners/images/Malik.jpg",
+    "link": "#"
+  },
+  {
+    "name": "Nashmi",
+    "image": "Partners/images/Nashmi.jpg",
+    "link": "https://www.facebook.com/profile.php?id=61566775440594"
+  },
+  {
+    "name": "Cave",
+    "image": "Partners/images/Cave.jpg",
+    "link": ""
+  },
+  {
+    "name": "Latakia",
+    "image": "Partners/images/Latakia.jpg",
+    "link": "https://www.facebook.com/abo.bakr.latakia"
+  },
+  {
+    "name": "Al-Haiba",
+    "image": "Partners/images/Alhaiba.jpg",
+    "link": "https://www.facebook.com/profile.php?id=61568560014482"
   }
 ]
