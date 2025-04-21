@@ -345,5 +345,50 @@
     "name": "بيت الشام",
     "image": "Partners/images/BaitElsham.jpg",
     "link": "https://www.facebook.com/profile.php?id=61569335051862"
+  },
+  {
+    "name": "عابدين",
+    "image": "Partners/images/abden.png",
+    "link": ""
+  },
+  {
+    "name": "اسواق التوفير",
+    "image": "Partners/images/eltawfer.png",
+    "link": "https://www.facebook.com/p/%D8%A3%D8%B3%D9%88%D8%A7%D9%82-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1-%D8%A8%D8%B3%D8%AE%D8%A7-100063924468234/"
+  },
+  {
+    "name": "Ahmed Tarek",
+    "image": "Partners/images/ahmedtarek.jpg",
+    "link": "https://www.facebook.com/ahmedtarekstore"
+  },
+  {
+    "name": "الوطنية",
+    "image": "Partners/images/watania.png",
+    "link": "https://www.facebook.com/profile.php?id=100068550506064"
+  },
+  {
+    "name": "شامنا",
+    "image": "Partners/images/shamna.jpg",
+    "link": "https://www.facebook.com/profile.php?id=100063786411190"
+  },
+  {
+    "name": "ProMax",
+    "image": "Partners/images/promax.png",
+    "link": "https://www.facebook.com/ProMaxFowa"
+  },
+  {
+    "name": "لقمة هنية",
+    "image": "Partners/images/hania.jpeg",
+    "link": "#"
+  },
+  {
+    "name": "Dor'o",
+    "image": "Partners/images/doro.jpeg",
+    "link": "#"
+  },
+  {
+    "name": "داوود باشا",
+    "image": "Partners/images/dawood.jpg",
+    "link": "https://www.facebook.com/people/%D8%AC%D8%B2%D8%A7%D8%B1%D8%A9-%D8%AF%D8%A7%D9%88%D9%88%D8%AF-%D8%A8%D8%A7%D8%B4%D8%A7/100063698306045/?_rdr"
   }
 ]
